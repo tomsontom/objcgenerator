@@ -1,0 +1,102 @@
+grammar at.bestsolution.objc.mapper.Mapper with org.eclipse.xtext.common.Terminals
+
+generate mapper "http://www.bestsolution.at/objc/mapper/Mapper"
+
+PackageDeclaration:
+	native?='native'? 'framework' name=ID 'mapped-to' javaPackage=QualifiedName
+		imports+=Import*
+		types+=Type+
+;
+
+Import:
+	'import' importedNamespace=(QualifiedNameWithWildcard|QualifiedName);
+
+Type:
+	Protocol | Class | Enum | TypeDef
+;
+
+TypeRef:
+	('id' ('<' type = [Type|QualifiedName] '>')?) | (type = [Type|QualifiedName] ('<' genericType=TypeRef '>')? '*'?) | builtin = BuiltinType 
+;
+
+Protocol:
+	doc=Docu?
+	('deprecated' deprecated=Version)? 'protocol' name=ID 'since' since=Version '{'
+		messages += Message*
+	'}'
+;
+
+Message:
+	doc=Docu?
+	('deprecated' deprecated=Version)? ('-'|'+') '(' returnValue=TypeRef ')' elements += MessageElement+ 'since' since=Version ';' 
+;
+
+MessageElement:
+	name=ID (':' '(' 'const'? type=TypeRef ')' variable=ID)?
+;
+
+Class:
+	doc=Docu?
+	('deprecated' deprecated=Version)? 'class' name=ID 'since' since=Version ('inherits' parent=[Class|QualifiedName] )? ('conforms' protocols+=[Protocol|QualifiedName] (',' protocols+=[Protocol|QualifiedName])* )? '{'
+		('initializers' '{'
+			initializerMessages+=Message+
+		'}')?
+		properties += Property*
+		messages += Message*
+	'}'
+;
+
+Version:
+	sinceMajor=INT '.' sinceMinor=INT
+;
+
+
+Property:
+	doc=Docu?
+	('deprecated' deprecated=Version)? '@property' '(' (attributes+=PropertyAttribute (',' attributes+=PropertyAttribute)*)? ')' type=TypeRef name=ID 'since' since=Version ';'
+;
+
+PropertyAttribute:
+	name=ID ('=' value=ID)?	
+;
+
+Enum:
+	'enum' name=ID '{'
+		elements+=EnumElement (',' elements+=EnumElement)*	
+	'}'
+;
+
+EnumElement:
+	name=ID ('=' value=INT)?
+;
+
+TypeDef:
+	doc=Docu?
+	'typedef' ((struct?='struct' '{'
+		(attributes+=TypeStructAttribute ';')+
+	'}') | (block?='void' '(' attributes+=TypeStructAttribute (',' attributes+=TypeStructAttribute)* ')') | typeRef=TypeRef ) name=ID ';'
+;
+
+TypeStructAttribute:
+	typeRef = TypeRef name=ID
+;
+
+BuiltinType:
+	'void'|'BOOL'|'double'
+;
+
+QualifiedName:
+  ValidID ('.' ValidID)*;
+
+QualifiedNameWithWildcard :
+	QualifiedName  '.' '*';
+
+ValidID:
+	ID;
+
+Docu:
+	content=JDOC
+;
+terminal JDOC : '/**' -> '*/' ;
+terminal ML_COMMENT : '/*' (!'*') -> '*/' ;
+terminal SL_COMMENT : '//' !('\n'|'\r')* ('\r'? '\n')? ;

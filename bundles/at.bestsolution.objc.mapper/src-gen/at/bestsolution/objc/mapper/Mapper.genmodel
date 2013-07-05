@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/at.bestsolution.objc.mapper/src-gen" editDirectory="/at.bestsolution.objc.mapper.edit/src"
+    editorDirectory="/at.bestsolution.objc.mapper.editor/src" modelPluginID="at.bestsolution.objc.mapper"
+    forceOverwrite="true" modelName="Mapper" updateClasspath="false" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    complianceLevel="5.0" copyrightFields="false" editPluginID="at.bestsolution.objc.mapper.edit"
+    editorPluginID="at.bestsolution.objc.mapper.editor" runtimeVersion="2.9">
+  <genPackages prefix="Mapper" basePackage="at.bestsolution.objc.mapper" disposableProviderFactory="true"
+      fileExtensions="framework" ecorePackage="Mapper.ecore#/">
+    <genClasses ecoreClass="Mapper.ecore#//PackageDeclaration">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//PackageDeclaration/native"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//PackageDeclaration/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//PackageDeclaration/javaPackage"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//PackageDeclaration/imports"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//PackageDeclaration/types"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//Import">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//Import/importedNamespace"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//Type">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//Type/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//TypeRef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Mapper.ecore#//TypeRef/type"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//TypeRef/genericType"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//TypeRef/builtin"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//Protocol">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Protocol/doc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Protocol/deprecated"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Protocol/since"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Protocol/messages"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//Message">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Message/doc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Message/deprecated"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Message/returnValue"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Message/elements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Message/since"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//MessageElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//MessageElement/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//MessageElement/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//MessageElement/variable"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//Class">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Class/doc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Class/deprecated"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Class/since"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Mapper.ecore#//Class/parent"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference Mapper.ecore#//Class/protocols"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Class/initializerMessages"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Class/properties"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Class/messages"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//Version">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//Version/sinceMajor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//Version/sinceMinor"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//Property">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Property/doc"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Property/deprecated"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Property/attributes"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Property/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//Property/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Property/since"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//PropertyAttribute">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//PropertyAttribute/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//PropertyAttribute/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//Enum">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Enum/elements"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//EnumElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//EnumElement/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//EnumElement/value"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//TypeDef">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//TypeDef/doc"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//TypeDef/struct"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//TypeDef/attributes"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//TypeDef/block"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//TypeDef/typeRef"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//TypeStructAttribute">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//TypeStructAttribute/typeRef"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//TypeStructAttribute/name"/>
+    </genClasses>
+    <genClasses ecoreClass="Mapper.ecore#//Docu">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//Docu/content"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>
