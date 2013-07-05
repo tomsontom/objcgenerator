@@ -1,0 +1,207 @@
+framework CoreLocation mapped-to org.robovm.cocoatouch.corelocation
+
+import Foundation.*
+ 
+typedef double CLLocationDegrees;
+typedef double CLLocationDirection;
+typedef double CLLocationDistance;
+typedef double CLLocationSpeed; 
+typedef double CLLocationAccuracy;   
+typedef double CLHeadingComponentValue;
+
+typedef struct {  
+	CLLocationDegrees latitude;
+	CLLocationDegrees longitude;
+} CLLocationCoordinate2D;
+  
+typedef void (NSArray<CLPlacemark> *placemark, NSError *error) CLGeocodeCompletionHandler; 
+
+/**
+ * @see http://developer.apple.com/library/ios/#documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/doc/uid/TP40007124
+ */
+protocol CLLocationManagerDelegate since 2.0 {
+	/**
+	 * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didUpdateLocations:
+	 */
+	- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations since 6.0;
+	/**
+	 * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didFailWithError:
+	 */
+	 - (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error since 2.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didFinishDeferredUpdatesWithError:
+	  */
+	 - (void)locationManager:(CLLocationManager *)manager didFinishDeferredUpdatesWithError:(NSError *)error since 6.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/DeprecationAppendix/AppendixADeprecatedAPI.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didUpdateToLocation:fromLocation:
+	  */ 
+	 deprecated 6.0 - (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation since 2.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManagerDidPauseLocationUpdates:
+	  */
+	 - (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager since 6.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManagerDidResumeLocationUpdates:
+	  */ 
+	 - (void)locationManagerDidResumeLocationUpdates:(CLLocationManager *)manager since 6.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didUpdateHeading:
+	  */
+	 - (void)locationManager:(CLLocationManager *)manager didUpdateHeading:(CLHeading *)newHeading since 3.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManagerShouldDisplayHeadingCalibration:
+	  */
+	 - (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager since 3.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didEnterRegion:
+	  */
+	 - (void)locationManager:(CLLocationManager *)manager didEnterRegion:(CLRegion *)region since 4.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didExitRegion:
+	  */
+	 - (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region since 4.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:monitoringDidFailForRegion:withError:
+	  */
+	 - (void)locationManager:(CLLocationManager *)manager monitoringDidFailForRegion:(CLRegion *)region withError:(NSError *)error since 4.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didStartMonitoringForRegion:
+	  */
+	 - (void)locationManager:(CLLocationManager *)manager didStartMonitoringForRegion:(CLRegion *)region since 5.0;
+	 /**
+	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didChangeAuthorizationStatus:
+	  */
+	 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status since 4.2; 
+}
+
+/**
+ * @see http://developer.apple.com/library/ios/#documentation/CoreLocation/Reference/CLLocationManager_Class/CLLocationManager/CLLocationManager.html#//apple_ref/doc/uid/TP40007125 
+ */
+class CLLocationManager since 2.0 {
+	@property(assign, nonatomic) id<CLLocationManagerDelegate> delegate since 2.0;
+	@property(assign, nonatomic) BOOL pausesLocationUpdatesAutomatically since 6.0;
+	@property(assign, nonatomic) CLLocationDistance distanceFilter since 2.0;
+	@property(assign, nonatomic) CLLocationAccuracy desiredAccuracy since 2.0;
+	@property(assign, nonatomic) CLActivityType activityType since 6.0; 
+	@property(assign, nonatomic) CLLocationDegrees headingFilter since 3.0;
+	@property(assign, nonatomic) CLDeviceOrientation headingOrientation since 4.0;
+	@property(readonly, nonatomic) NSSet *monitoredRegions since 4.0;
+	@property(readonly, nonatomic) CLLocationDistance maximumRegionMonitoringDistance since 4.0;
+	@property(readonly, nonatomic) CLLocation *location since 2.0;
+	@property(readonly, nonatomic) CLHeading *heading since 4.0;
+	deprecated 6.0 @property(copy, nonatomic) NSString *purpose since 3.2;
+	deprecated 4.0 @property(readonly, nonatomic) BOOL headingAvailable since 3.0;
+	deprecated 2.0 @property(readonly, nonatomic) BOOL locationServicesEnabled since 2.0;
+	
+	+ (CLAuthorizationStatus)authorizationStatus since 4.2;
+	+ (BOOL)locationServicesEnabled since 4.0;
+	+ (BOOL)deferredLocationUpdatesAvailable since 6.0;
+	+ (BOOL)significantLocationChangeMonitoringAvailable since 4.0;
+	+ (BOOL)headingAvailable since 4.0;
+	+ (BOOL)regionMonitoringAvailable since 4.0;
+	- (void)startUpdatingLocation since 2.0;
+	- (void)stopUpdatingLocation since 2.0;
+	- (void)startMonitoringSignificantLocationChanges since 4.0;
+	- (void)stopMonitoringSignificantLocationChanges since 4.0;
+	- (void)startUpdatingHeading since 3.0;
+	- (void)stopUpdatingHeading since 3.0;
+	- (void)dismissHeadingCalibrationDisplay since 3.0;
+	- (void)startMonitoringForRegion:(CLRegion *)region since 5.0;
+	- (void)stopMonitoringForRegion:(CLRegion *)region since 4.0;	
+	- (void)allowDeferredLocationUpdatesUntilTraveled:(CLLocationDistance)distance timeout:(NSTimeInterval)timeout since 6.0;
+	- (void)disallowDeferredLocationUpdates since 6.0;
+	deprecated 6.0 + (BOOL)regionMonitoringEnabled since 4.0;
+	deprecated 6.0 - (void)startMonitoringForRegion:(CLRegion *)region desiredAccuracy:(CLLocationAccuracy)accuracy since 4.0;	
+}
+class CLLocation since 2.0 conforms NSCoding, NSCopying {
+	initializers {
+		- (id)initWithLatitude:(CLLocationDegrees)latitude longitude:(CLLocationDegrees)longitude since 2.0;
+		- (id)initWithCoordinate:(CLLocationCoordinate2D)coordinate altitude:(CLLocationDistance)altitude horizontalAccuracy:(CLLocationAccuracy)hAccuracy verticalAccuracy:(CLLocationAccuracy)vAccuracy timestamp:(NSDate *)timestamp since 2.0;
+		- (id)initWithCoordinate:(CLLocationCoordinate2D)coordinate altitude:(CLLocationDistance)altitude horizontalAccuracy:(CLLocationAccuracy)hAccuracy verticalAccuracy:(CLLocationAccuracy)vAccuracy course:(CLLocationDirection)course speed:(CLLocationSpeed)speed timestamp:(NSDate *)timestamp since 4.2;
+	}
+	@property(readonly, NS_NONATOMIC_IPHONEONLY) CLLocationCoordinate2D coordinate since 2.0;
+	@property(readonly, NS_NONATOMIC_IPHONEONLY) CLLocationDistance altitude since 2.0;
+	@property(readonly, NS_NONATOMIC_IPHONEONLY) CLLocationAccuracy horizontalAccuracy since 2.0;
+	@property(readonly, NS_NONATOMIC_IPHONEONLY) CLLocationAccuracy verticalAccuracy since 2.0;
+	@property(readonly, NS_NONATOMIC_IPHONEONLY) NSDate *timestamp since 2.0;
+	@property(readonly, NS_NONATOMIC_IPHONEONLY) CLLocationSpeed speed since 2.2;
+	@property(readonly, NS_NONATOMIC_IPHONEONLY) CLLocationDirection course since 2.2;
+	- (NSString *)description since 2.0; 
+	- (CLLocationDistance)distanceFromLocation:(const CLLocation *)location since 3.2; 
+	deprecated 3.2 - (CLLocationDistance)getDistanceFrom:(const CLLocation *)location since 2.0;
+}
+class CLHeading since 3.0 conforms NSCoding, NSCopying {
+	@property(readonly, nonatomic) CLLocationDirection magneticHeading since 3.0;
+	@property(readonly, nonatomic) CLLocationDirection trueHeading since 3.0;
+	@property(readonly, nonatomic) CLLocationDirection headingAccuracy since 3.0;
+	@property(readonly, nonatomic) NSDate *timestamp since 3.0;
+	@property(readonly, nonatomic) CLHeadingComponentValue x since 3.0;
+	@property(readonly, nonatomic) CLHeadingComponentValue y since 3.0;
+	@property(readonly, nonatomic) CLHeadingComponentValue z since 3.0;
+	- (NSString *)description since 3.0;
+}
+class CLRegion since 4.0 conforms NSCoding, NSCopying {
+	initializers {
+		- (id)initCircularRegionWithCenter:(CLLocationCoordinate2D)center radius:(CLLocationDistance)radius identifier:(NSString *)identifier since 4.0;
+	}
+	@property(readonly, nonatomic) NSString *identifier since 4.0;
+	@property(readonly, nonatomic) CLLocationCoordinate2D center since 4.0;
+	@property(readonly, nonatomic) CLLocationDistance radius since 4.0; 
+	- (BOOL)containsCoordinate:(CLLocationCoordinate2D)coordinate since 4.0;
+}
+
+class CLGeocoder since 5.0 {
+	/**
+	 * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLGeocoder_class/Reference/Reference.html#//apple_ref/occ/instp/CLGeocoder/geocoding
+	 */
+	@property (nonatomic, readonly, getter=isGeocoding) BOOL geocoding since 5.0;
+	- (void)reverseGeocodeLocation:(CLLocation *)location completionHandler:(CLGeocodeCompletionHandler)completionHandler since 5.0;
+	- (void)geocodeAddressString:(NSString *)addressString completionHandler:(CLGeocodeCompletionHandler)completionHandler since 5.0;
+	- (void)geocodeAddressString:(NSString *)addressString inRegion:(CLRegion *)region completionHandler:(CLGeocodeCompletionHandler)completionHandler since 5.0;
+	- (void)cancelGeocode since 5.0;
+		
+}
+
+class CLPlacemark since 5.0 conforms NSCoding, NSCopying {
+	initializers {
+		- (id)initWithPlacemark:(CLPlacemark *)placemark since 5.0;
+	}
+	@property(nonatomic, readonly) CLLocation *location since 5.0;
+	@property(nonatomic, readonly) NSString *name since 5.0;
+	@property(nonatomic, readonly) NSDictionary *addressDictionary since 5.0;
+	@property(nonatomic, readonly) NSString *ISOcountryCode since 5.0;
+	@property(nonatomic, readonly) NSString *country since 5.0;
+	@property(nonatomic, readonly) NSString *postalCode since 5.0;
+	@property(nonatomic, readonly) NSString *administrativeArea since 5.0;
+	@property(nonatomic, readonly) NSString *subAdministrativeArea since 5.0;
+	@property(nonatomic, readonly) NSString *locality since 5.0;
+	@property(nonatomic, readonly) NSString *subLocality since 5.0;
+	@property(nonatomic, readonly) NSString *thoroughfare since 5.0;
+	@property(nonatomic, readonly) NSString *subThoroughfare since 5.0;
+	@property(nonatomic, readonly) CLRegion *region since 5.0;
+	@property(nonatomic, readonly) NSString *inlandWater since 5.0;
+	@property(nonatomic, readonly) NSString *ocean since 5.0;
+	@property(nonatomic, readonly) NSArray *areasOfInterest since 5.0;
+}
+
+enum CLDeviceOrientation {   
+	CLDeviceOrientationUnknown = 0,
+	CLDeviceOrientationPortrait,
+	CLDeviceOrientationPortraitUpsideDown,
+	CLDeviceOrientationLandscapeLeft,
+	CLDeviceOrientationLandscapeRight, 
+	CLDeviceOrientationFaceUp,
+	CLDeviceOrientationFaceDown
+} 
+enum CLActivityType {
+	CLActivityTypeOther = 1,
+	CLActivityTypeAutomotiveNavigation,
+	CLActivityTypeFitness,
+	CLActivityTypeOtherNavigation
+}
+enum CLAuthorizationStatus {
+	kCLAuthorizationStatusNotDetermined = 0,
+	kCLAuthorizationStatusRestricted,
+	kCLAuthorizationStatusDenied,  
+	kCLAuthorizationStatusAuthorized
+}

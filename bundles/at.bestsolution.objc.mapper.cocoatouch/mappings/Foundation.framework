@@ -1,0 +1,41 @@
+native framework Foundation mapped-to org.robovm.cocoatouch.foundation
+
+protocol NSCoding since 2.0 {
+	
+}
+
+protocol NSCopying since 2.0 {
+	
+}
+
+class NSDictionary since 2.0 {
+	
+} 
+
+class NSTimeInterval since 2.0 {
+	
+}
+
+class NSDate since 2.0 {
+	
+}
+
+class NSObject since 1.0 {
+	
+}
+
+class NSArray since 1.0 {
+		
+}
+
+class NSError since 1.0 {
+		
+}
+
+class NSSet since 1.0 {
+	
+}
+
+class NSString since 1.0 {
+	
+}
