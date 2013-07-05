@@ -14,6 +14,7 @@ import at.bestsolution.objc.mapper.mapper.Protocol
 import at.bestsolution.objc.mapper.mapper.TypeRef
 import org.eclipse.emf.ecore.EObject
 import java.util.StringTokenizer
+import at.bestsolution.objc.mapper.mapper.Message
 
 /**
  * Generates code from your model files on save.
@@ -92,9 +93,34 @@ class MapperGenerator implements IGenerator {
 	
 	def dispatch doGenerate(Protocol protocol) '''
 	package «protocol.javaPackage»;
+	«val importManager = new ImportManager()»
+	«val content = doGenerateProtcolContent(protocol,importManager)»
 	
-	public interface «protocol.name» {
+	«FOR i : importManager.imports»
+	import «i»;
+	«ENDFOR»
+	
+	«content»
+	'''
+	
+	def doGenerateProtcolContent(Protocol protocol, extension ImportManager mgr) '''
+	public interface «protocol.name» extends «"org.robovm.cocoatouch.foundation.NSObjectProtocol".shorten("NSObjectProtocol")» {
 		
+		«FOR m : protocol.messages»
+		public «m.returnValue.toType(mgr)» «m.messageName»(«m.elements.map[e|e.type.toType(mgr) + " " + e.name].join(",")»);
+		«ENDFOR»
+	
+		public static class Adapter extends «"org.robovm.cocoatouch.foundation.NSObject".shorten("NSObject")» implements «protocol.name» {
+			«FOR m : protocol.messages»
+			@«"org.robovm.objc.annotation.NotImplemented".shorten("NotImplemented")»("«m.elements.map[e|e.name].join(":")»:") public «m.returnValue.toType(mgr)» «m.messageName»(«m.elements.map[e|e.type.toType(mgr) + " " + e.name].join(",")») { throw new UnsupportedOperationException(); }
+			«ENDFOR»
+		}
+		
+		static class Callbacks {
+			«FOR m : protocol.messages»
+			@«"org.robovm.rt.bro.annotation.Callback".shorten("Callback")» @«"org.robovm.objc.annotation.BindSelector".shorten("BindSelector")»("«m.elements.map[e|e.name].join(":")»:") public static «m.returnValue.toType(mgr)» «m.messageName»(«protocol.name» __self__, «"org.robovm.objc.Selector".shorten("Selector")» __cmd__, «m.elements.map[e|e.type.toType(mgr) + " " + e.name].join(",")») { «IF m.returnValue.toType(mgr) != "void"»return «ENDIF»__self__.«m.messageName»( «m.elements.map[e|e.name].join(",")»); }
+			«ENDFOR»
+		}
 	}
 	'''
 	
@@ -160,6 +186,14 @@ class MapperGenerator implements IGenerator {
 		return e.eResource.contents.get(0) as PackageDeclaration
 	} 
 	
+	def static messageName(Message m) {
+		if(m.elements.length == 1) {
+			return m.elements.head.name; 
+		} else {
+			return m.elements.get(1).name;
+		}
+	}
+	
 	def static fixJDoc(String doc) {
 		val result = new StringBuffer();
 		val linetokenizer = new StringTokenizer(doc, "\r\n");
@@ -180,4 +214,6 @@ class MapperGenerator implements IGenerator {
 		}
 		return result.toString();
 	}
+	
+	
 }
