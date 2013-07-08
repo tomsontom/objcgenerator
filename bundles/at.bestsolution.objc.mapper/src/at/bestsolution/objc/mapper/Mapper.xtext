@@ -28,7 +28,7 @@ Protocol:
 
 Message:
 	doc=Docu?
-	('deprecated' deprecated=Version)? ('-'|'+') '(' returnValue=TypeRef ')' elements += MessageElement+ 'since' since=Version ';' 
+	('deprecated' deprecated=Version)? ('-'|'+') '(' returnValue=TypeRef ')' elements += MessageElement+ 'since' since=Version ('mapped-to' javaName=ID)? ';' 
 ;
 
 MessageElement:

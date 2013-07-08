@@ -19,6 +19,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link at.bestsolution.objc.mapper.mapper.Message#getReturnValue <em>Return Value</em>}</li>
  *   <li>{@link at.bestsolution.objc.mapper.mapper.Message#getElements <em>Elements</em>}</li>
  *   <li>{@link at.bestsolution.objc.mapper.mapper.Message#getSince <em>Since</em>}</li>
+ *   <li>{@link at.bestsolution.objc.mapper.mapper.Message#getJavaName <em>Java Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -147,5 +148,31 @@ public interface Message extends EObject
    * @generated
    */
   void setSince(Version value);
+
+  /**
+   * Returns the value of the '<em><b>Java Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <p>
+   * If the meaning of the '<em>Java Name</em>' attribute isn't clear,
+   * there really should be more of a description here...
+   * </p>
+   * <!-- end-user-doc -->
+   * @return the value of the '<em>Java Name</em>' attribute.
+   * @see #setJavaName(String)
+   * @see at.bestsolution.objc.mapper.mapper.MapperPackage#getMessage_JavaName()
+   * @model
+   * @generated
+   */
+  String getJavaName();
+
+  /**
+   * Sets the value of the '{@link at.bestsolution.objc.mapper.mapper.Message#getJavaName <em>Java Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @param value the new value of the '<em>Java Name</em>' attribute.
+   * @see #getJavaName()
+   * @generated
+   */
+  void setJavaName(String value);
 
 } // Message

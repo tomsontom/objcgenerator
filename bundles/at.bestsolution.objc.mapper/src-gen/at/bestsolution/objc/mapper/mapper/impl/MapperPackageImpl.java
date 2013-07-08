@@ -464,6 +464,16 @@ public class MapperPackageImpl extends EPackageImpl implements MapperPackage
    * <!-- end-user-doc -->
    * @generated
    */
+  public EAttribute getMessage_JavaName()
+  {
+    return (EAttribute)messageEClass.getEStructuralFeatures().get(5);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   public EClass getMessageElement()
   {
     return messageElementEClass;
@@ -939,6 +949,7 @@ public class MapperPackageImpl extends EPackageImpl implements MapperPackage
     createEReference(messageEClass, MESSAGE__RETURN_VALUE);
     createEReference(messageEClass, MESSAGE__ELEMENTS);
     createEReference(messageEClass, MESSAGE__SINCE);
+    createEAttribute(messageEClass, MESSAGE__JAVA_NAME);
 
     messageElementEClass = createEClass(MESSAGE_ELEMENT);
     createEAttribute(messageElementEClass, MESSAGE_ELEMENT__NAME);
@@ -1058,6 +1069,7 @@ public class MapperPackageImpl extends EPackageImpl implements MapperPackage
     initEReference(getMessage_ReturnValue(), this.getTypeRef(), null, "returnValue", null, 0, 1, Message.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getMessage_Elements(), this.getMessageElement(), null, "elements", null, 0, -1, Message.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
     initEReference(getMessage_Since(), this.getVersion(), null, "since", null, 0, 1, Message.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+    initEAttribute(getMessage_JavaName(), ecorePackage.getEString(), "javaName", null, 0, 1, Message.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
     initEClass(messageElementEClass, MessageElement.class, "MessageElement", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
     initEAttribute(getMessageElement_Name(), ecorePackage.getEString(), "name", null, 0, 1, MessageElement.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);

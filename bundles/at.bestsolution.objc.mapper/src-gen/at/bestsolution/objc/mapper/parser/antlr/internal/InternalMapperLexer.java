@@ -774,12 +774,12 @@ public class InternalMapperLexer extends Lexer {
         try {
             int _type = RULE_JDOC;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1914:11: ( '/**' ( options {greedy=false; } : . )* '*/' )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1914:13: '/**' ( options {greedy=false; } : . )* '*/'
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1936:11: ( '/**' ( options {greedy=false; } : . )* '*/' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1936:13: '/**' ( options {greedy=false; } : . )* '*/'
             {
             match("/**"); 
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1914:19: ( options {greedy=false; } : . )*
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1936:19: ( options {greedy=false; } : . )*
             loop1:
             do {
                 int alt1=2;
@@ -804,7 +804,7 @@ public class InternalMapperLexer extends Lexer {
 
                 switch (alt1) {
             	case 1 :
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1914:47: .
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1936:47: .
             	    {
             	    matchAny(); 
 
@@ -834,8 +834,8 @@ public class InternalMapperLexer extends Lexer {
         try {
             int _type = RULE_ML_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1916:17: ( '/*' ~ ( '*' ) ( options {greedy=false; } : . )* '*/' )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1916:19: '/*' ~ ( '*' ) ( options {greedy=false; } : . )* '*/'
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1938:17: ( '/*' ~ ( '*' ) ( options {greedy=false; } : . )* '*/' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1938:19: '/*' ~ ( '*' ) ( options {greedy=false; } : . )* '*/'
             {
             match("/*"); 
 
@@ -848,7 +848,7 @@ public class InternalMapperLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1916:31: ( options {greedy=false; } : . )*
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1938:31: ( options {greedy=false; } : . )*
             loop2:
             do {
                 int alt2=2;
@@ -873,7 +873,7 @@ public class InternalMapperLexer extends Lexer {
 
                 switch (alt2) {
             	case 1 :
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1916:59: .
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1938:59: .
             	    {
             	    matchAny(); 
 
@@ -903,12 +903,12 @@ public class InternalMapperLexer extends Lexer {
         try {
             int _type = RULE_SL_COMMENT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1918:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1918:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1940:17: ( '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )? )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1940:19: '//' (~ ( ( '\\n' | '\\r' ) ) )* ( ( '\\r' )? '\\n' )?
             {
             match("//"); 
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1918:24: (~ ( ( '\\n' | '\\r' ) ) )*
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1940:24: (~ ( ( '\\n' | '\\r' ) ) )*
             loop3:
             do {
                 int alt3=2;
@@ -921,7 +921,7 @@ public class InternalMapperLexer extends Lexer {
 
                 switch (alt3) {
             	case 1 :
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1918:24: ~ ( ( '\\n' | '\\r' ) )
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1940:24: ~ ( ( '\\n' | '\\r' ) )
             	    {
             	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='\t')||(input.LA(1)>='\u000B' && input.LA(1)<='\f')||(input.LA(1)>='\u000E' && input.LA(1)<='\uFFFF') ) {
             	        input.consume();
@@ -941,7 +941,7 @@ public class InternalMapperLexer extends Lexer {
                 }
             } while (true);
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1918:40: ( ( '\\r' )? '\\n' )?
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1940:40: ( ( '\\r' )? '\\n' )?
             int alt5=2;
             int LA5_0 = input.LA(1);
 
@@ -950,9 +950,9 @@ public class InternalMapperLexer extends Lexer {
             }
             switch (alt5) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1918:41: ( '\\r' )? '\\n'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1940:41: ( '\\r' )? '\\n'
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1918:41: ( '\\r' )?
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1940:41: ( '\\r' )?
                     int alt4=2;
                     int LA4_0 = input.LA(1);
 
@@ -961,7 +961,7 @@ public class InternalMapperLexer extends Lexer {
                     }
                     switch (alt4) {
                         case 1 :
-                            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1918:41: '\\r'
+                            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1940:41: '\\r'
                             {
                             match('\r'); 
 
@@ -993,10 +993,10 @@ public class InternalMapperLexer extends Lexer {
         try {
             int _type = RULE_ID;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1920:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1920:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1942:9: ( ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )* )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1942:11: ( '^' )? ( 'a' .. 'z' | 'A' .. 'Z' | '_' ) ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1920:11: ( '^' )?
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1942:11: ( '^' )?
             int alt6=2;
             int LA6_0 = input.LA(1);
 
@@ -1005,7 +1005,7 @@ public class InternalMapperLexer extends Lexer {
             }
             switch (alt6) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1920:11: '^'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1942:11: '^'
                     {
                     match('^'); 
 
@@ -1023,7 +1023,7 @@ public class InternalMapperLexer extends Lexer {
                 recover(mse);
                 throw mse;}
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1920:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1942:40: ( 'a' .. 'z' | 'A' .. 'Z' | '_' | '0' .. '9' )*
             loop7:
             do {
                 int alt7=2;
@@ -1072,10 +1072,10 @@ public class InternalMapperLexer extends Lexer {
         try {
             int _type = RULE_INT;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1922:10: ( ( '0' .. '9' )+ )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1922:12: ( '0' .. '9' )+
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1944:10: ( ( '0' .. '9' )+ )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1944:12: ( '0' .. '9' )+
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1922:12: ( '0' .. '9' )+
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1944:12: ( '0' .. '9' )+
             int cnt8=0;
             loop8:
             do {
@@ -1089,7 +1089,7 @@ public class InternalMapperLexer extends Lexer {
 
                 switch (alt8) {
             	case 1 :
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1922:13: '0' .. '9'
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1944:13: '0' .. '9'
             	    {
             	    matchRange('0','9'); 
 
@@ -1121,10 +1121,10 @@ public class InternalMapperLexer extends Lexer {
         try {
             int _type = RULE_STRING;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:13: ( ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:15: ( '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"' | '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\'' )
             int alt11=2;
             int LA11_0 = input.LA(1);
 
@@ -1142,10 +1142,10 @@ public class InternalMapperLexer extends Lexer {
             }
             switch (alt11) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:16: '\"' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )* '\"'
                     {
                     match('\"'); 
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:20: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\"' ) ) )*
                     loop9:
                     do {
                         int alt9=3;
@@ -1161,7 +1161,7 @@ public class InternalMapperLexer extends Lexer {
 
                         switch (alt9) {
                     	case 1 :
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:21: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1177,7 +1177,7 @@ public class InternalMapperLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:66: ~ ( ( '\\\\' | '\"' ) )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:66: ~ ( ( '\\\\' | '\"' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='!')||(input.LA(1)>='#' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1202,10 +1202,10 @@ public class InternalMapperLexer extends Lexer {
                     }
                     break;
                 case 2 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:86: '\\'' ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )* '\\''
                     {
                     match('\''); 
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:91: ( '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' ) | ~ ( ( '\\\\' | '\\'' ) ) )*
                     loop10:
                     do {
                         int alt10=3;
@@ -1221,7 +1221,7 @@ public class InternalMapperLexer extends Lexer {
 
                         switch (alt10) {
                     	case 1 :
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:92: '\\\\' ( 'b' | 't' | 'n' | 'f' | 'r' | 'u' | '\"' | '\\'' | '\\\\' )
                     	    {
                     	    match('\\'); 
                     	    if ( input.LA(1)=='\"'||input.LA(1)=='\''||input.LA(1)=='\\'||input.LA(1)=='b'||input.LA(1)=='f'||input.LA(1)=='n'||input.LA(1)=='r'||(input.LA(1)>='t' && input.LA(1)<='u') ) {
@@ -1237,7 +1237,7 @@ public class InternalMapperLexer extends Lexer {
                     	    }
                     	    break;
                     	case 2 :
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1924:137: ~ ( ( '\\\\' | '\\'' ) )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1946:137: ~ ( ( '\\\\' | '\\'' ) )
                     	    {
                     	    if ( (input.LA(1)>='\u0000' && input.LA(1)<='&')||(input.LA(1)>='(' && input.LA(1)<='[')||(input.LA(1)>=']' && input.LA(1)<='\uFFFF') ) {
                     	        input.consume();
@@ -1280,10 +1280,10 @@ public class InternalMapperLexer extends Lexer {
         try {
             int _type = RULE_WS;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1926:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1926:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1948:9: ( ( ' ' | '\\t' | '\\r' | '\\n' )+ )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1948:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1926:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1948:11: ( ' ' | '\\t' | '\\r' | '\\n' )+
             int cnt12=0;
             loop12:
             do {
@@ -1337,8 +1337,8 @@ public class InternalMapperLexer extends Lexer {
         try {
             int _type = RULE_ANY_OTHER;
             int _channel = DEFAULT_TOKEN_CHANNEL;
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1928:16: ( . )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1928:18: .
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1950:16: ( . )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1950:18: .
             {
             matchAny(); 
 

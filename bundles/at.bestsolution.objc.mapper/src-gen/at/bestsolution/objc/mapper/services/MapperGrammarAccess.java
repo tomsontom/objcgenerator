@@ -329,15 +329,19 @@ public class MapperGrammarAccess extends AbstractGrammarElementFinder {
 		private final Keyword cSinceKeyword_7 = (Keyword)cGroup.eContents().get(7);
 		private final Assignment cSinceAssignment_8 = (Assignment)cGroup.eContents().get(8);
 		private final RuleCall cSinceVersionParserRuleCall_8_0 = (RuleCall)cSinceAssignment_8.eContents().get(0);
-		private final Keyword cSemicolonKeyword_9 = (Keyword)cGroup.eContents().get(9);
+		private final Group cGroup_9 = (Group)cGroup.eContents().get(9);
+		private final Keyword cMappedToKeyword_9_0 = (Keyword)cGroup_9.eContents().get(0);
+		private final Assignment cJavaNameAssignment_9_1 = (Assignment)cGroup_9.eContents().get(1);
+		private final RuleCall cJavaNameIDTerminalRuleCall_9_1_0 = (RuleCall)cJavaNameAssignment_9_1.eContents().get(0);
+		private final Keyword cSemicolonKeyword_10 = (Keyword)cGroup.eContents().get(10);
 		
 		//Message:
 		//	doc=Docu? ("deprecated" deprecated=Version)? ("-" | "+") "(" returnValue=TypeRef ")" elements+=MessageElement+ "since"
-		//	since=Version ";";
+		//	since=Version ("mapped-to" javaName=ID)? ";";
 		public ParserRule getRule() { return rule; }
 
 		//doc=Docu? ("deprecated" deprecated=Version)? ("-" | "+") "(" returnValue=TypeRef ")" elements+=MessageElement+ "since"
-		//since=Version ";"
+		//since=Version ("mapped-to" javaName=ID)? ";"
 		public Group getGroup() { return cGroup; }
 
 		//doc=Docu?
@@ -394,8 +398,20 @@ public class MapperGrammarAccess extends AbstractGrammarElementFinder {
 		//Version
 		public RuleCall getSinceVersionParserRuleCall_8_0() { return cSinceVersionParserRuleCall_8_0; }
 
+		//("mapped-to" javaName=ID)?
+		public Group getGroup_9() { return cGroup_9; }
+
+		//"mapped-to"
+		public Keyword getMappedToKeyword_9_0() { return cMappedToKeyword_9_0; }
+
+		//javaName=ID
+		public Assignment getJavaNameAssignment_9_1() { return cJavaNameAssignment_9_1; }
+
+		//ID
+		public RuleCall getJavaNameIDTerminalRuleCall_9_1_0() { return cJavaNameIDTerminalRuleCall_9_1_0; }
+
 		//";"
-		public Keyword getSemicolonKeyword_9() { return cSemicolonKeyword_9; }
+		public Keyword getSemicolonKeyword_10() { return cSemicolonKeyword_10; }
 	}
 
 	public class MessageElementElements extends AbstractParserRuleElementFinder {
@@ -1277,7 +1293,7 @@ public class MapperGrammarAccess extends AbstractGrammarElementFinder {
 
 	//Message:
 	//	doc=Docu? ("deprecated" deprecated=Version)? ("-" | "+") "(" returnValue=TypeRef ")" elements+=MessageElement+ "since"
-	//	since=Version ";";
+	//	since=Version ("mapped-to" javaName=ID)? ";";
 	public MessageElements getMessageAccess() {
 		return (pMessage != null) ? pMessage : (pMessage = new MessageElements());
 	}

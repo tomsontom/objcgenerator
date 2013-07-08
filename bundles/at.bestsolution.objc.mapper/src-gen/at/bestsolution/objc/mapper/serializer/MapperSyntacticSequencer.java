@@ -62,7 +62,7 @@ public class MapperSyntacticSequencer extends AbstractSyntacticSequencer {
 	
 	/**
 	 * Syntax:
-	 *     '+' | '-'
+	 *     '-' | '+'
 	 */
 	protected void emit_Message_HyphenMinusKeyword_2_0_or_PlusSignKeyword_2_1(EObject semanticObject, ISynNavigable transition, List<INode> nodes) {
 		acceptNodes(transition, nodes);

@@ -1355,7 +1355,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMessage"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:557:1: ruleMessage returns [EObject current=null] : ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) otherlv_11= ';' ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:557:1: ruleMessage returns [EObject current=null] : ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) (otherlv_11= 'mapped-to' ( (lv_javaName_12_0= RULE_ID ) ) )? otherlv_13= ';' ) ;
     public final EObject ruleMessage() throws RecognitionException {
         EObject current = null;
 
@@ -1366,6 +1366,8 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
         Token otherlv_7=null;
         Token otherlv_9=null;
         Token otherlv_11=null;
+        Token lv_javaName_12_0=null;
+        Token otherlv_13=null;
         EObject lv_doc_0_0 = null;
 
         EObject lv_deprecated_2_0 = null;
@@ -1380,11 +1382,11 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:560:28: ( ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) otherlv_11= ';' ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:561:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) otherlv_11= ';' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:560:28: ( ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) (otherlv_11= 'mapped-to' ( (lv_javaName_12_0= RULE_ID ) ) )? otherlv_13= ';' ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:561:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) (otherlv_11= 'mapped-to' ( (lv_javaName_12_0= RULE_ID ) ) )? otherlv_13= ';' )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:561:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) otherlv_11= ';' )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:561:2: ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) otherlv_11= ';'
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:561:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) (otherlv_11= 'mapped-to' ( (lv_javaName_12_0= RULE_ID ) ) )? otherlv_13= ';' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:561:2: ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? (otherlv_3= '-' | otherlv_4= '+' ) otherlv_5= '(' ( (lv_returnValue_6_0= ruleTypeRef ) ) otherlv_7= ')' ( (lv_elements_8_0= ruleMessageElement ) )+ otherlv_9= 'since' ( (lv_since_10_0= ruleVersion ) ) (otherlv_11= 'mapped-to' ( (lv_javaName_12_0= RULE_ID ) ) )? otherlv_13= ';'
             {
             // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:561:2: ( (lv_doc_0_0= ruleDocu ) )?
             int alt13=2;
@@ -1648,9 +1650,56 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_11=(Token)match(input,29,FOLLOW_29_in_ruleMessage1325); 
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:676:2: (otherlv_11= 'mapped-to' ( (lv_javaName_12_0= RULE_ID ) ) )?
+            int alt17=2;
+            int LA17_0 = input.LA(1);
 
-                	newLeafNode(otherlv_11, grammarAccess.getMessageAccess().getSemicolonKeyword_9());
+            if ( (LA17_0==14) ) {
+                alt17=1;
+            }
+            switch (alt17) {
+                case 1 :
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:676:4: otherlv_11= 'mapped-to' ( (lv_javaName_12_0= RULE_ID ) )
+                    {
+                    otherlv_11=(Token)match(input,14,FOLLOW_14_in_ruleMessage1326); 
+
+                        	newLeafNode(otherlv_11, grammarAccess.getMessageAccess().getMappedToKeyword_9_0());
+                        
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:680:1: ( (lv_javaName_12_0= RULE_ID ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:681:1: (lv_javaName_12_0= RULE_ID )
+                    {
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:681:1: (lv_javaName_12_0= RULE_ID )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:682:3: lv_javaName_12_0= RULE_ID
+                    {
+                    lv_javaName_12_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMessage1343); 
+
+                    			newLeafNode(lv_javaName_12_0, grammarAccess.getMessageAccess().getJavaNameIDTerminalRuleCall_9_1_0()); 
+                    		
+
+                    	        if (current==null) {
+                    	            current = createModelElement(grammarAccess.getMessageRule());
+                    	        }
+                           		setWithLastConsumed(
+                           			current, 
+                           			"javaName",
+                            		lv_javaName_12_0, 
+                            		"ID");
+                    	    
+
+                    }
+
+
+                    }
+
+
+                    }
+                    break;
+
+            }
+
+            otherlv_13=(Token)match(input,29,FOLLOW_29_in_ruleMessage1362); 
+
+                	newLeafNode(otherlv_13, grammarAccess.getMessageAccess().getSemicolonKeyword_10());
                 
 
             }
@@ -1673,7 +1722,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleMessageElement"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:688:1: entryRuleMessageElement returns [EObject current=null] : iv_ruleMessageElement= ruleMessageElement EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:710:1: entryRuleMessageElement returns [EObject current=null] : iv_ruleMessageElement= ruleMessageElement EOF ;
     public final EObject entryRuleMessageElement() throws RecognitionException {
         EObject current = null;
 
@@ -1681,17 +1730,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:689:2: (iv_ruleMessageElement= ruleMessageElement EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:690:2: iv_ruleMessageElement= ruleMessageElement EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:711:2: (iv_ruleMessageElement= ruleMessageElement EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:712:2: iv_ruleMessageElement= ruleMessageElement EOF
             {
              newCompositeNode(grammarAccess.getMessageElementRule()); 
-            pushFollow(FOLLOW_ruleMessageElement_in_entryRuleMessageElement1361);
+            pushFollow(FOLLOW_ruleMessageElement_in_entryRuleMessageElement1398);
             iv_ruleMessageElement=ruleMessageElement();
 
             state._fsp--;
 
              current =iv_ruleMessageElement; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleMessageElement1371); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleMessageElement1408); 
 
             }
 
@@ -1709,7 +1758,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleMessageElement"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:697:1: ruleMessageElement returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )? ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:719:1: ruleMessageElement returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )? ) ;
     public final EObject ruleMessageElement() throws RecognitionException {
         EObject current = null;
 
@@ -1725,19 +1774,19 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:700:28: ( ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )? ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:701:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )? )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:722:28: ( ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )? ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:723:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )? )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:701:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )? )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:701:2: ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )?
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:723:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )? )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:723:2: ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )?
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:701:2: ( (lv_name_0_0= RULE_ID ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:702:1: (lv_name_0_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:723:2: ( (lv_name_0_0= RULE_ID ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:724:1: (lv_name_0_0= RULE_ID )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:702:1: (lv_name_0_0= RULE_ID )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:703:3: lv_name_0_0= RULE_ID
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:724:1: (lv_name_0_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:725:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMessageElement1413); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMessageElement1450); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getMessageElementAccess().getNameIDTerminalRuleCall_0_0()); 
             		
@@ -1757,37 +1806,37 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:719:2: (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )?
-            int alt18=2;
-            int LA18_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:741:2: (otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) ) )?
+            int alt19=2;
+            int LA19_0 = input.LA(1);
 
-            if ( (LA18_0==30) ) {
-                alt18=1;
+            if ( (LA19_0==30) ) {
+                alt19=1;
             }
-            switch (alt18) {
+            switch (alt19) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:719:4: otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:741:4: otherlv_1= ':' otherlv_2= '(' (otherlv_3= 'const' )? ( (lv_type_4_0= ruleTypeRef ) ) otherlv_5= ')' ( (lv_variable_6_0= RULE_ID ) )
                     {
-                    otherlv_1=(Token)match(input,30,FOLLOW_30_in_ruleMessageElement1431); 
+                    otherlv_1=(Token)match(input,30,FOLLOW_30_in_ruleMessageElement1468); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getMessageElementAccess().getColonKeyword_1_0());
                         
-                    otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleMessageElement1443); 
+                    otherlv_2=(Token)match(input,27,FOLLOW_27_in_ruleMessageElement1480); 
 
                         	newLeafNode(otherlv_2, grammarAccess.getMessageElementAccess().getLeftParenthesisKeyword_1_1());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:727:1: (otherlv_3= 'const' )?
-                    int alt17=2;
-                    int LA17_0 = input.LA(1);
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:749:1: (otherlv_3= 'const' )?
+                    int alt18=2;
+                    int LA18_0 = input.LA(1);
 
-                    if ( (LA17_0==31) ) {
-                        alt17=1;
+                    if ( (LA18_0==31) ) {
+                        alt18=1;
                     }
-                    switch (alt17) {
+                    switch (alt18) {
                         case 1 :
-                            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:727:3: otherlv_3= 'const'
+                            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:749:3: otherlv_3= 'const'
                             {
-                            otherlv_3=(Token)match(input,31,FOLLOW_31_in_ruleMessageElement1456); 
+                            otherlv_3=(Token)match(input,31,FOLLOW_31_in_ruleMessageElement1493); 
 
                                 	newLeafNode(otherlv_3, grammarAccess.getMessageElementAccess().getConstKeyword_1_2());
                                 
@@ -1797,16 +1846,16 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:731:3: ( (lv_type_4_0= ruleTypeRef ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:732:1: (lv_type_4_0= ruleTypeRef )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:753:3: ( (lv_type_4_0= ruleTypeRef ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:754:1: (lv_type_4_0= ruleTypeRef )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:732:1: (lv_type_4_0= ruleTypeRef )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:733:3: lv_type_4_0= ruleTypeRef
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:754:1: (lv_type_4_0= ruleTypeRef )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:755:3: lv_type_4_0= ruleTypeRef
                     {
                      
                     	        newCompositeNode(grammarAccess.getMessageElementAccess().getTypeTypeRefParserRuleCall_1_3_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleTypeRef_in_ruleMessageElement1479);
+                    pushFollow(FOLLOW_ruleTypeRef_in_ruleMessageElement1516);
                     lv_type_4_0=ruleTypeRef();
 
                     state._fsp--;
@@ -1828,17 +1877,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_5=(Token)match(input,28,FOLLOW_28_in_ruleMessageElement1491); 
+                    otherlv_5=(Token)match(input,28,FOLLOW_28_in_ruleMessageElement1528); 
 
                         	newLeafNode(otherlv_5, grammarAccess.getMessageElementAccess().getRightParenthesisKeyword_1_4());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:753:1: ( (lv_variable_6_0= RULE_ID ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:754:1: (lv_variable_6_0= RULE_ID )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:775:1: ( (lv_variable_6_0= RULE_ID ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:776:1: (lv_variable_6_0= RULE_ID )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:754:1: (lv_variable_6_0= RULE_ID )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:755:3: lv_variable_6_0= RULE_ID
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:776:1: (lv_variable_6_0= RULE_ID )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:777:3: lv_variable_6_0= RULE_ID
                     {
-                    lv_variable_6_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMessageElement1508); 
+                    lv_variable_6_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleMessageElement1545); 
 
                     			newLeafNode(lv_variable_6_0, grammarAccess.getMessageElementAccess().getVariableIDTerminalRuleCall_1_5_0()); 
                     		
@@ -1885,7 +1934,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleClass"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:779:1: entryRuleClass returns [EObject current=null] : iv_ruleClass= ruleClass EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:801:1: entryRuleClass returns [EObject current=null] : iv_ruleClass= ruleClass EOF ;
     public final EObject entryRuleClass() throws RecognitionException {
         EObject current = null;
 
@@ -1893,17 +1942,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:780:2: (iv_ruleClass= ruleClass EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:781:2: iv_ruleClass= ruleClass EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:802:2: (iv_ruleClass= ruleClass EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:803:2: iv_ruleClass= ruleClass EOF
             {
              newCompositeNode(grammarAccess.getClassRule()); 
-            pushFollow(FOLLOW_ruleClass_in_entryRuleClass1551);
+            pushFollow(FOLLOW_ruleClass_in_entryRuleClass1588);
             iv_ruleClass=ruleClass();
 
             state._fsp--;
 
              current =iv_ruleClass; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleClass1561); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleClass1598); 
 
             }
 
@@ -1921,7 +1970,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleClass"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:788:1: ruleClass returns [EObject current=null] : ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}' ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:810:1: ruleClass returns [EObject current=null] : ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}' ) ;
     public final EObject ruleClass() throws RecognitionException {
         EObject current = null;
 
@@ -1953,30 +2002,30 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:791:28: ( ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}' ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:792:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:813:28: ( ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}' ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:814:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}' )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:792:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}' )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:792:2: ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}'
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:814:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:814:2: ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= 'class' ( (lv_name_4_0= RULE_ID ) ) otherlv_5= 'since' ( (lv_since_6_0= ruleVersion ) ) (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )? (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )? otherlv_13= '{' (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )? ( (lv_properties_18_0= ruleProperty ) )* ( (lv_messages_19_0= ruleMessage ) )* otherlv_20= '}'
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:792:2: ( (lv_doc_0_0= ruleDocu ) )?
-            int alt19=2;
-            int LA19_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:814:2: ( (lv_doc_0_0= ruleDocu ) )?
+            int alt20=2;
+            int LA20_0 = input.LA(1);
 
-            if ( (LA19_0==RULE_JDOC) ) {
-                alt19=1;
+            if ( (LA20_0==RULE_JDOC) ) {
+                alt20=1;
             }
-            switch (alt19) {
+            switch (alt20) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:793:1: (lv_doc_0_0= ruleDocu )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:815:1: (lv_doc_0_0= ruleDocu )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:793:1: (lv_doc_0_0= ruleDocu )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:794:3: lv_doc_0_0= ruleDocu
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:815:1: (lv_doc_0_0= ruleDocu )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:816:3: lv_doc_0_0= ruleDocu
                     {
                      
                     	        newCompositeNode(grammarAccess.getClassAccess().getDocDocuParserRuleCall_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleDocu_in_ruleClass1607);
+                    pushFollow(FOLLOW_ruleDocu_in_ruleClass1644);
                     lv_doc_0_0=ruleDocu();
 
                     state._fsp--;
@@ -2001,31 +2050,31 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:810:3: (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )?
-            int alt20=2;
-            int LA20_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:832:3: (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )?
+            int alt21=2;
+            int LA21_0 = input.LA(1);
 
-            if ( (LA20_0==20) ) {
-                alt20=1;
+            if ( (LA21_0==20) ) {
+                alt21=1;
             }
-            switch (alt20) {
+            switch (alt21) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:810:5: otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:832:5: otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) )
                     {
-                    otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleClass1621); 
+                    otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleClass1658); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getClassAccess().getDeprecatedKeyword_1_0());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:814:1: ( (lv_deprecated_2_0= ruleVersion ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:815:1: (lv_deprecated_2_0= ruleVersion )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:836:1: ( (lv_deprecated_2_0= ruleVersion ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:837:1: (lv_deprecated_2_0= ruleVersion )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:815:1: (lv_deprecated_2_0= ruleVersion )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:816:3: lv_deprecated_2_0= ruleVersion
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:837:1: (lv_deprecated_2_0= ruleVersion )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:838:3: lv_deprecated_2_0= ruleVersion
                     {
                      
                     	        newCompositeNode(grammarAccess.getClassAccess().getDeprecatedVersionParserRuleCall_1_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleVersion_in_ruleClass1642);
+                    pushFollow(FOLLOW_ruleVersion_in_ruleClass1679);
                     lv_deprecated_2_0=ruleVersion();
 
                     state._fsp--;
@@ -2053,17 +2102,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,32,FOLLOW_32_in_ruleClass1656); 
+            otherlv_3=(Token)match(input,32,FOLLOW_32_in_ruleClass1693); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getClassAccess().getClassKeyword_2());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:836:1: ( (lv_name_4_0= RULE_ID ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:837:1: (lv_name_4_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:858:1: ( (lv_name_4_0= RULE_ID ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:859:1: (lv_name_4_0= RULE_ID )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:837:1: (lv_name_4_0= RULE_ID )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:838:3: lv_name_4_0= RULE_ID
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:859:1: (lv_name_4_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:860:3: lv_name_4_0= RULE_ID
             {
-            lv_name_4_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleClass1673); 
+            lv_name_4_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleClass1710); 
 
             			newLeafNode(lv_name_4_0, grammarAccess.getClassAccess().getNameIDTerminalRuleCall_3_0()); 
             		
@@ -2083,20 +2132,20 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_5=(Token)match(input,22,FOLLOW_22_in_ruleClass1690); 
+            otherlv_5=(Token)match(input,22,FOLLOW_22_in_ruleClass1727); 
 
                 	newLeafNode(otherlv_5, grammarAccess.getClassAccess().getSinceKeyword_4());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:858:1: ( (lv_since_6_0= ruleVersion ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:859:1: (lv_since_6_0= ruleVersion )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:880:1: ( (lv_since_6_0= ruleVersion ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:881:1: (lv_since_6_0= ruleVersion )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:859:1: (lv_since_6_0= ruleVersion )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:860:3: lv_since_6_0= ruleVersion
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:881:1: (lv_since_6_0= ruleVersion )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:882:3: lv_since_6_0= ruleVersion
             {
              
             	        newCompositeNode(grammarAccess.getClassAccess().getSinceVersionParserRuleCall_5_0()); 
             	    
-            pushFollow(FOLLOW_ruleVersion_in_ruleClass1711);
+            pushFollow(FOLLOW_ruleVersion_in_ruleClass1748);
             lv_since_6_0=ruleVersion();
 
             state._fsp--;
@@ -2118,26 +2167,26 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:876:2: (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )?
-            int alt21=2;
-            int LA21_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:898:2: (otherlv_7= 'inherits' ( ( ruleQualifiedName ) ) )?
+            int alt22=2;
+            int LA22_0 = input.LA(1);
 
-            if ( (LA21_0==33) ) {
-                alt21=1;
+            if ( (LA22_0==33) ) {
+                alt22=1;
             }
-            switch (alt21) {
+            switch (alt22) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:876:4: otherlv_7= 'inherits' ( ( ruleQualifiedName ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:898:4: otherlv_7= 'inherits' ( ( ruleQualifiedName ) )
                     {
-                    otherlv_7=(Token)match(input,33,FOLLOW_33_in_ruleClass1724); 
+                    otherlv_7=(Token)match(input,33,FOLLOW_33_in_ruleClass1761); 
 
                         	newLeafNode(otherlv_7, grammarAccess.getClassAccess().getInheritsKeyword_6_0());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:880:1: ( ( ruleQualifiedName ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:881:1: ( ruleQualifiedName )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:902:1: ( ( ruleQualifiedName ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:903:1: ( ruleQualifiedName )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:881:1: ( ruleQualifiedName )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:882:3: ruleQualifiedName
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:903:1: ( ruleQualifiedName )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:904:3: ruleQualifiedName
                     {
 
                     			if (current==null) {
@@ -2147,7 +2196,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getClassAccess().getParentClassCrossReference_6_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleQualifiedName_in_ruleClass1747);
+                    pushFollow(FOLLOW_ruleQualifiedName_in_ruleClass1784);
                     ruleQualifiedName();
 
                     state._fsp--;
@@ -2167,26 +2216,26 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:895:4: (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )?
-            int alt23=2;
-            int LA23_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:917:4: (otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )* )?
+            int alt24=2;
+            int LA24_0 = input.LA(1);
 
-            if ( (LA23_0==34) ) {
-                alt23=1;
+            if ( (LA24_0==34) ) {
+                alt24=1;
             }
-            switch (alt23) {
+            switch (alt24) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:895:6: otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )*
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:917:6: otherlv_9= 'conforms' ( ( ruleQualifiedName ) ) (otherlv_11= ',' ( ( ruleQualifiedName ) ) )*
                     {
-                    otherlv_9=(Token)match(input,34,FOLLOW_34_in_ruleClass1762); 
+                    otherlv_9=(Token)match(input,34,FOLLOW_34_in_ruleClass1799); 
 
                         	newLeafNode(otherlv_9, grammarAccess.getClassAccess().getConformsKeyword_7_0());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:899:1: ( ( ruleQualifiedName ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:900:1: ( ruleQualifiedName )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:921:1: ( ( ruleQualifiedName ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:922:1: ( ruleQualifiedName )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:900:1: ( ruleQualifiedName )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:901:3: ruleQualifiedName
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:922:1: ( ruleQualifiedName )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:923:3: ruleQualifiedName
                     {
 
                     			if (current==null) {
@@ -2196,7 +2245,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                      
                     	        newCompositeNode(grammarAccess.getClassAccess().getProtocolsProtocolCrossReference_7_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleQualifiedName_in_ruleClass1785);
+                    pushFollow(FOLLOW_ruleQualifiedName_in_ruleClass1822);
                     ruleQualifiedName();
 
                     state._fsp--;
@@ -2210,30 +2259,30 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:914:2: (otherlv_11= ',' ( ( ruleQualifiedName ) ) )*
-                    loop22:
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:936:2: (otherlv_11= ',' ( ( ruleQualifiedName ) ) )*
+                    loop23:
                     do {
-                        int alt22=2;
-                        int LA22_0 = input.LA(1);
+                        int alt23=2;
+                        int LA23_0 = input.LA(1);
 
-                        if ( (LA22_0==35) ) {
-                            alt22=1;
+                        if ( (LA23_0==35) ) {
+                            alt23=1;
                         }
 
 
-                        switch (alt22) {
+                        switch (alt23) {
                     	case 1 :
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:914:4: otherlv_11= ',' ( ( ruleQualifiedName ) )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:936:4: otherlv_11= ',' ( ( ruleQualifiedName ) )
                     	    {
-                    	    otherlv_11=(Token)match(input,35,FOLLOW_35_in_ruleClass1798); 
+                    	    otherlv_11=(Token)match(input,35,FOLLOW_35_in_ruleClass1835); 
 
                     	        	newLeafNode(otherlv_11, grammarAccess.getClassAccess().getCommaKeyword_7_2_0());
                     	        
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:918:1: ( ( ruleQualifiedName ) )
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:919:1: ( ruleQualifiedName )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:940:1: ( ( ruleQualifiedName ) )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:941:1: ( ruleQualifiedName )
                     	    {
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:919:1: ( ruleQualifiedName )
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:920:3: ruleQualifiedName
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:941:1: ( ruleQualifiedName )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:942:3: ruleQualifiedName
                     	    {
 
                     	    			if (current==null) {
@@ -2243,7 +2292,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     	     
                     	    	        newCompositeNode(grammarAccess.getClassAccess().getProtocolsProtocolCrossReference_7_2_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleQualifiedName_in_ruleClass1821);
+                    	    pushFollow(FOLLOW_ruleQualifiedName_in_ruleClass1858);
                     	    ruleQualifiedName();
 
                     	    state._fsp--;
@@ -2262,7 +2311,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop22;
+                    	    break loop23;
                         }
                     } while (true);
 
@@ -2272,52 +2321,52 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_13=(Token)match(input,23,FOLLOW_23_in_ruleClass1837); 
+            otherlv_13=(Token)match(input,23,FOLLOW_23_in_ruleClass1874); 
 
                 	newLeafNode(otherlv_13, grammarAccess.getClassAccess().getLeftCurlyBracketKeyword_8());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:937:1: (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )?
-            int alt25=2;
-            int LA25_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:959:1: (otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}' )?
+            int alt26=2;
+            int LA26_0 = input.LA(1);
 
-            if ( (LA25_0==36) ) {
-                alt25=1;
+            if ( (LA26_0==36) ) {
+                alt26=1;
             }
-            switch (alt25) {
+            switch (alt26) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:937:3: otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:959:3: otherlv_14= 'initializers' otherlv_15= '{' ( (lv_initializerMessages_16_0= ruleMessage ) )+ otherlv_17= '}'
                     {
-                    otherlv_14=(Token)match(input,36,FOLLOW_36_in_ruleClass1850); 
+                    otherlv_14=(Token)match(input,36,FOLLOW_36_in_ruleClass1887); 
 
                         	newLeafNode(otherlv_14, grammarAccess.getClassAccess().getInitializersKeyword_9_0());
                         
-                    otherlv_15=(Token)match(input,23,FOLLOW_23_in_ruleClass1862); 
+                    otherlv_15=(Token)match(input,23,FOLLOW_23_in_ruleClass1899); 
 
                         	newLeafNode(otherlv_15, grammarAccess.getClassAccess().getLeftCurlyBracketKeyword_9_1());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:945:1: ( (lv_initializerMessages_16_0= ruleMessage ) )+
-                    int cnt24=0;
-                    loop24:
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:967:1: ( (lv_initializerMessages_16_0= ruleMessage ) )+
+                    int cnt25=0;
+                    loop25:
                     do {
-                        int alt24=2;
-                        int LA24_0 = input.LA(1);
+                        int alt25=2;
+                        int LA25_0 = input.LA(1);
 
-                        if ( (LA24_0==RULE_JDOC||LA24_0==20||(LA24_0>=25 && LA24_0<=26)) ) {
-                            alt24=1;
+                        if ( (LA25_0==RULE_JDOC||LA25_0==20||(LA25_0>=25 && LA25_0<=26)) ) {
+                            alt25=1;
                         }
 
 
-                        switch (alt24) {
+                        switch (alt25) {
                     	case 1 :
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:946:1: (lv_initializerMessages_16_0= ruleMessage )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:968:1: (lv_initializerMessages_16_0= ruleMessage )
                     	    {
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:946:1: (lv_initializerMessages_16_0= ruleMessage )
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:947:3: lv_initializerMessages_16_0= ruleMessage
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:968:1: (lv_initializerMessages_16_0= ruleMessage )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:969:3: lv_initializerMessages_16_0= ruleMessage
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getClassAccess().getInitializerMessagesMessageParserRuleCall_9_2_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleMessage_in_ruleClass1883);
+                    	    pushFollow(FOLLOW_ruleMessage_in_ruleClass1920);
                     	    lv_initializerMessages_16_0=ruleMessage();
 
                     	    state._fsp--;
@@ -2341,15 +2390,15 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt24 >= 1 ) break loop24;
+                    	    if ( cnt25 >= 1 ) break loop25;
                                 EarlyExitException eee =
-                                    new EarlyExitException(24, input);
+                                    new EarlyExitException(25, input);
                                 throw eee;
                         }
-                        cnt24++;
+                        cnt25++;
                     } while (true);
 
-                    otherlv_17=(Token)match(input,24,FOLLOW_24_in_ruleClass1896); 
+                    otherlv_17=(Token)match(input,24,FOLLOW_24_in_ruleClass1933); 
 
                         	newLeafNode(otherlv_17, grammarAccess.getClassAccess().getRightCurlyBracketKeyword_9_3());
                         
@@ -2359,29 +2408,29 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:967:3: ( (lv_properties_18_0= ruleProperty ) )*
-            loop26:
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:989:3: ( (lv_properties_18_0= ruleProperty ) )*
+            loop27:
             do {
-                int alt26=2;
+                int alt27=2;
                 switch ( input.LA(1) ) {
                 case RULE_JDOC:
                     {
-                    int LA26_1 = input.LA(2);
+                    int LA27_1 = input.LA(2);
 
-                    if ( (LA26_1==20) ) {
-                        int LA26_2 = input.LA(3);
+                    if ( (LA27_1==20) ) {
+                        int LA27_2 = input.LA(3);
 
-                        if ( (LA26_2==RULE_INT) ) {
-                            int LA26_5 = input.LA(4);
+                        if ( (LA27_2==RULE_INT) ) {
+                            int LA27_5 = input.LA(4);
 
-                            if ( (LA26_5==37) ) {
-                                int LA26_6 = input.LA(5);
+                            if ( (LA27_5==37) ) {
+                                int LA27_6 = input.LA(5);
 
-                                if ( (LA26_6==RULE_INT) ) {
-                                    int LA26_7 = input.LA(6);
+                                if ( (LA27_6==RULE_INT) ) {
+                                    int LA27_7 = input.LA(6);
 
-                                    if ( (LA26_7==38) ) {
-                                        alt26=1;
+                                    if ( (LA27_7==38) ) {
+                                        alt27=1;
                                     }
 
 
@@ -2395,8 +2444,8 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
                     }
-                    else if ( (LA26_1==38) ) {
-                        alt26=1;
+                    else if ( (LA27_1==38) ) {
+                        alt27=1;
                     }
 
 
@@ -2404,19 +2453,19 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     break;
                 case 20:
                     {
-                    int LA26_2 = input.LA(2);
+                    int LA27_2 = input.LA(2);
 
-                    if ( (LA26_2==RULE_INT) ) {
-                        int LA26_5 = input.LA(3);
+                    if ( (LA27_2==RULE_INT) ) {
+                        int LA27_5 = input.LA(3);
 
-                        if ( (LA26_5==37) ) {
-                            int LA26_6 = input.LA(4);
+                        if ( (LA27_5==37) ) {
+                            int LA27_6 = input.LA(4);
 
-                            if ( (LA26_6==RULE_INT) ) {
-                                int LA26_7 = input.LA(5);
+                            if ( (LA27_6==RULE_INT) ) {
+                                int LA27_7 = input.LA(5);
 
-                                if ( (LA26_7==38) ) {
-                                    alt26=1;
+                                if ( (LA27_7==38) ) {
+                                    alt27=1;
                                 }
 
 
@@ -2433,23 +2482,23 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     break;
                 case 38:
                     {
-                    alt26=1;
+                    alt27=1;
                     }
                     break;
 
                 }
 
-                switch (alt26) {
+                switch (alt27) {
             	case 1 :
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:968:1: (lv_properties_18_0= ruleProperty )
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:990:1: (lv_properties_18_0= ruleProperty )
             	    {
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:968:1: (lv_properties_18_0= ruleProperty )
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:969:3: lv_properties_18_0= ruleProperty
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:990:1: (lv_properties_18_0= ruleProperty )
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:991:3: lv_properties_18_0= ruleProperty
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getClassAccess().getPropertiesPropertyParserRuleCall_10_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleProperty_in_ruleClass1919);
+            	    pushFollow(FOLLOW_ruleProperty_in_ruleClass1956);
             	    lv_properties_18_0=ruleProperty();
 
             	    state._fsp--;
@@ -2473,32 +2522,32 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop26;
+            	    break loop27;
                 }
             } while (true);
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:985:3: ( (lv_messages_19_0= ruleMessage ) )*
-            loop27:
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1007:3: ( (lv_messages_19_0= ruleMessage ) )*
+            loop28:
             do {
-                int alt27=2;
-                int LA27_0 = input.LA(1);
+                int alt28=2;
+                int LA28_0 = input.LA(1);
 
-                if ( (LA27_0==RULE_JDOC||LA27_0==20||(LA27_0>=25 && LA27_0<=26)) ) {
-                    alt27=1;
+                if ( (LA28_0==RULE_JDOC||LA28_0==20||(LA28_0>=25 && LA28_0<=26)) ) {
+                    alt28=1;
                 }
 
 
-                switch (alt27) {
+                switch (alt28) {
             	case 1 :
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:986:1: (lv_messages_19_0= ruleMessage )
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1008:1: (lv_messages_19_0= ruleMessage )
             	    {
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:986:1: (lv_messages_19_0= ruleMessage )
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:987:3: lv_messages_19_0= ruleMessage
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1008:1: (lv_messages_19_0= ruleMessage )
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1009:3: lv_messages_19_0= ruleMessage
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getClassAccess().getMessagesMessageParserRuleCall_11_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleMessage_in_ruleClass1941);
+            	    pushFollow(FOLLOW_ruleMessage_in_ruleClass1978);
             	    lv_messages_19_0=ruleMessage();
 
             	    state._fsp--;
@@ -2522,11 +2571,11 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop27;
+            	    break loop28;
                 }
             } while (true);
 
-            otherlv_20=(Token)match(input,24,FOLLOW_24_in_ruleClass1954); 
+            otherlv_20=(Token)match(input,24,FOLLOW_24_in_ruleClass1991); 
 
                 	newLeafNode(otherlv_20, grammarAccess.getClassAccess().getRightCurlyBracketKeyword_12());
                 
@@ -2551,7 +2600,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleVersion"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1015:1: entryRuleVersion returns [EObject current=null] : iv_ruleVersion= ruleVersion EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1037:1: entryRuleVersion returns [EObject current=null] : iv_ruleVersion= ruleVersion EOF ;
     public final EObject entryRuleVersion() throws RecognitionException {
         EObject current = null;
 
@@ -2559,17 +2608,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1016:2: (iv_ruleVersion= ruleVersion EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1017:2: iv_ruleVersion= ruleVersion EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1038:2: (iv_ruleVersion= ruleVersion EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1039:2: iv_ruleVersion= ruleVersion EOF
             {
              newCompositeNode(grammarAccess.getVersionRule()); 
-            pushFollow(FOLLOW_ruleVersion_in_entryRuleVersion1990);
+            pushFollow(FOLLOW_ruleVersion_in_entryRuleVersion2027);
             iv_ruleVersion=ruleVersion();
 
             state._fsp--;
 
              current =iv_ruleVersion; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleVersion2000); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleVersion2037); 
 
             }
 
@@ -2587,7 +2636,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleVersion"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1024:1: ruleVersion returns [EObject current=null] : ( ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) ) ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1046:1: ruleVersion returns [EObject current=null] : ( ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) ) ) ;
     public final EObject ruleVersion() throws RecognitionException {
         EObject current = null;
 
@@ -2598,19 +2647,19 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1027:28: ( ( ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) ) ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1028:1: ( ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1049:28: ( ( ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) ) ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1050:1: ( ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) ) )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1028:1: ( ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1028:2: ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1050:1: ( ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1050:2: ( (lv_sinceMajor_0_0= RULE_INT ) ) otherlv_1= '.' ( (lv_sinceMinor_2_0= RULE_INT ) )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1028:2: ( (lv_sinceMajor_0_0= RULE_INT ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1029:1: (lv_sinceMajor_0_0= RULE_INT )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1050:2: ( (lv_sinceMajor_0_0= RULE_INT ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1051:1: (lv_sinceMajor_0_0= RULE_INT )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1029:1: (lv_sinceMajor_0_0= RULE_INT )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1030:3: lv_sinceMajor_0_0= RULE_INT
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1051:1: (lv_sinceMajor_0_0= RULE_INT )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1052:3: lv_sinceMajor_0_0= RULE_INT
             {
-            lv_sinceMajor_0_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleVersion2042); 
+            lv_sinceMajor_0_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleVersion2079); 
 
             			newLeafNode(lv_sinceMajor_0_0, grammarAccess.getVersionAccess().getSinceMajorINTTerminalRuleCall_0_0()); 
             		
@@ -2630,17 +2679,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,37,FOLLOW_37_in_ruleVersion2059); 
+            otherlv_1=(Token)match(input,37,FOLLOW_37_in_ruleVersion2096); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getVersionAccess().getFullStopKeyword_1());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1050:1: ( (lv_sinceMinor_2_0= RULE_INT ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1051:1: (lv_sinceMinor_2_0= RULE_INT )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1072:1: ( (lv_sinceMinor_2_0= RULE_INT ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1073:1: (lv_sinceMinor_2_0= RULE_INT )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1051:1: (lv_sinceMinor_2_0= RULE_INT )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1052:3: lv_sinceMinor_2_0= RULE_INT
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1073:1: (lv_sinceMinor_2_0= RULE_INT )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1074:3: lv_sinceMinor_2_0= RULE_INT
             {
-            lv_sinceMinor_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleVersion2076); 
+            lv_sinceMinor_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleVersion2113); 
 
             			newLeafNode(lv_sinceMinor_2_0, grammarAccess.getVersionAccess().getSinceMinorINTTerminalRuleCall_2_0()); 
             		
@@ -2681,7 +2730,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleProperty"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1076:1: entryRuleProperty returns [EObject current=null] : iv_ruleProperty= ruleProperty EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1098:1: entryRuleProperty returns [EObject current=null] : iv_ruleProperty= ruleProperty EOF ;
     public final EObject entryRuleProperty() throws RecognitionException {
         EObject current = null;
 
@@ -2689,17 +2738,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1077:2: (iv_ruleProperty= ruleProperty EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1078:2: iv_ruleProperty= ruleProperty EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1099:2: (iv_ruleProperty= ruleProperty EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1100:2: iv_ruleProperty= ruleProperty EOF
             {
              newCompositeNode(grammarAccess.getPropertyRule()); 
-            pushFollow(FOLLOW_ruleProperty_in_entryRuleProperty2117);
+            pushFollow(FOLLOW_ruleProperty_in_entryRuleProperty2154);
             iv_ruleProperty=ruleProperty();
 
             state._fsp--;
 
              current =iv_ruleProperty; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleProperty2127); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleProperty2164); 
 
             }
 
@@ -2717,7 +2766,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleProperty"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1085:1: ruleProperty returns [EObject current=null] : ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';' ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1107:1: ruleProperty returns [EObject current=null] : ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';' ) ;
     public final EObject ruleProperty() throws RecognitionException {
         EObject current = null;
 
@@ -2745,30 +2794,30 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1088:28: ( ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';' ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1089:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1110:28: ( ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';' ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1111:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';' )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1089:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';' )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1089:2: ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';'
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1111:1: ( ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1111:2: ( (lv_doc_0_0= ruleDocu ) )? (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )? otherlv_3= '@property' otherlv_4= '(' ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )? otherlv_8= ')' ( (lv_type_9_0= ruleTypeRef ) ) ( (lv_name_10_0= RULE_ID ) ) otherlv_11= 'since' ( (lv_since_12_0= ruleVersion ) ) otherlv_13= ';'
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1089:2: ( (lv_doc_0_0= ruleDocu ) )?
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1111:2: ( (lv_doc_0_0= ruleDocu ) )?
+            int alt29=2;
+            int LA29_0 = input.LA(1);
 
-            if ( (LA28_0==RULE_JDOC) ) {
-                alt28=1;
+            if ( (LA29_0==RULE_JDOC) ) {
+                alt29=1;
             }
-            switch (alt28) {
+            switch (alt29) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1090:1: (lv_doc_0_0= ruleDocu )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1112:1: (lv_doc_0_0= ruleDocu )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1090:1: (lv_doc_0_0= ruleDocu )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1091:3: lv_doc_0_0= ruleDocu
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1112:1: (lv_doc_0_0= ruleDocu )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1113:3: lv_doc_0_0= ruleDocu
                     {
                      
                     	        newCompositeNode(grammarAccess.getPropertyAccess().getDocDocuParserRuleCall_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleDocu_in_ruleProperty2173);
+                    pushFollow(FOLLOW_ruleDocu_in_ruleProperty2210);
                     lv_doc_0_0=ruleDocu();
 
                     state._fsp--;
@@ -2793,31 +2842,31 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1107:3: (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )?
-            int alt29=2;
-            int LA29_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1129:3: (otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) ) )?
+            int alt30=2;
+            int LA30_0 = input.LA(1);
 
-            if ( (LA29_0==20) ) {
-                alt29=1;
+            if ( (LA30_0==20) ) {
+                alt30=1;
             }
-            switch (alt29) {
+            switch (alt30) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1107:5: otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1129:5: otherlv_1= 'deprecated' ( (lv_deprecated_2_0= ruleVersion ) )
                     {
-                    otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleProperty2187); 
+                    otherlv_1=(Token)match(input,20,FOLLOW_20_in_ruleProperty2224); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getPropertyAccess().getDeprecatedKeyword_1_0());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1111:1: ( (lv_deprecated_2_0= ruleVersion ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1112:1: (lv_deprecated_2_0= ruleVersion )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1133:1: ( (lv_deprecated_2_0= ruleVersion ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1134:1: (lv_deprecated_2_0= ruleVersion )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1112:1: (lv_deprecated_2_0= ruleVersion )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1113:3: lv_deprecated_2_0= ruleVersion
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1134:1: (lv_deprecated_2_0= ruleVersion )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1135:3: lv_deprecated_2_0= ruleVersion
                     {
                      
                     	        newCompositeNode(grammarAccess.getPropertyAccess().getDeprecatedVersionParserRuleCall_1_1_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleVersion_in_ruleProperty2208);
+                    pushFollow(FOLLOW_ruleVersion_in_ruleProperty2245);
                     lv_deprecated_2_0=ruleVersion();
 
                     state._fsp--;
@@ -2845,35 +2894,35 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_3=(Token)match(input,38,FOLLOW_38_in_ruleProperty2222); 
+            otherlv_3=(Token)match(input,38,FOLLOW_38_in_ruleProperty2259); 
 
                 	newLeafNode(otherlv_3, grammarAccess.getPropertyAccess().getPropertyKeyword_2());
                 
-            otherlv_4=(Token)match(input,27,FOLLOW_27_in_ruleProperty2234); 
+            otherlv_4=(Token)match(input,27,FOLLOW_27_in_ruleProperty2271); 
 
                 	newLeafNode(otherlv_4, grammarAccess.getPropertyAccess().getLeftParenthesisKeyword_3());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1137:1: ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )?
-            int alt31=2;
-            int LA31_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1159:1: ( ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )* )?
+            int alt32=2;
+            int LA32_0 = input.LA(1);
 
-            if ( (LA31_0==RULE_ID) ) {
-                alt31=1;
+            if ( (LA32_0==RULE_ID) ) {
+                alt32=1;
             }
-            switch (alt31) {
+            switch (alt32) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1137:2: ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )*
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1159:2: ( (lv_attributes_5_0= rulePropertyAttribute ) ) (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )*
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1137:2: ( (lv_attributes_5_0= rulePropertyAttribute ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1138:1: (lv_attributes_5_0= rulePropertyAttribute )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1159:2: ( (lv_attributes_5_0= rulePropertyAttribute ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1160:1: (lv_attributes_5_0= rulePropertyAttribute )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1138:1: (lv_attributes_5_0= rulePropertyAttribute )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1139:3: lv_attributes_5_0= rulePropertyAttribute
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1160:1: (lv_attributes_5_0= rulePropertyAttribute )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1161:3: lv_attributes_5_0= rulePropertyAttribute
                     {
                      
                     	        newCompositeNode(grammarAccess.getPropertyAccess().getAttributesPropertyAttributeParserRuleCall_4_0_0()); 
                     	    
-                    pushFollow(FOLLOW_rulePropertyAttribute_in_ruleProperty2256);
+                    pushFollow(FOLLOW_rulePropertyAttribute_in_ruleProperty2293);
                     lv_attributes_5_0=rulePropertyAttribute();
 
                     state._fsp--;
@@ -2895,35 +2944,35 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1155:2: (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )*
-                    loop30:
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1177:2: (otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) ) )*
+                    loop31:
                     do {
-                        int alt30=2;
-                        int LA30_0 = input.LA(1);
+                        int alt31=2;
+                        int LA31_0 = input.LA(1);
 
-                        if ( (LA30_0==35) ) {
-                            alt30=1;
+                        if ( (LA31_0==35) ) {
+                            alt31=1;
                         }
 
 
-                        switch (alt30) {
+                        switch (alt31) {
                     	case 1 :
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1155:4: otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1177:4: otherlv_6= ',' ( (lv_attributes_7_0= rulePropertyAttribute ) )
                     	    {
-                    	    otherlv_6=(Token)match(input,35,FOLLOW_35_in_ruleProperty2269); 
+                    	    otherlv_6=(Token)match(input,35,FOLLOW_35_in_ruleProperty2306); 
 
                     	        	newLeafNode(otherlv_6, grammarAccess.getPropertyAccess().getCommaKeyword_4_1_0());
                     	        
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1159:1: ( (lv_attributes_7_0= rulePropertyAttribute ) )
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1160:1: (lv_attributes_7_0= rulePropertyAttribute )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1181:1: ( (lv_attributes_7_0= rulePropertyAttribute ) )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1182:1: (lv_attributes_7_0= rulePropertyAttribute )
                     	    {
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1160:1: (lv_attributes_7_0= rulePropertyAttribute )
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1161:3: lv_attributes_7_0= rulePropertyAttribute
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1182:1: (lv_attributes_7_0= rulePropertyAttribute )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1183:3: lv_attributes_7_0= rulePropertyAttribute
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getPropertyAccess().getAttributesPropertyAttributeParserRuleCall_4_1_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_rulePropertyAttribute_in_ruleProperty2290);
+                    	    pushFollow(FOLLOW_rulePropertyAttribute_in_ruleProperty2327);
                     	    lv_attributes_7_0=rulePropertyAttribute();
 
                     	    state._fsp--;
@@ -2950,7 +2999,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop30;
+                    	    break loop31;
                         }
                     } while (true);
 
@@ -2960,20 +3009,20 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_8=(Token)match(input,28,FOLLOW_28_in_ruleProperty2306); 
+            otherlv_8=(Token)match(input,28,FOLLOW_28_in_ruleProperty2343); 
 
                 	newLeafNode(otherlv_8, grammarAccess.getPropertyAccess().getRightParenthesisKeyword_5());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1181:1: ( (lv_type_9_0= ruleTypeRef ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1182:1: (lv_type_9_0= ruleTypeRef )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1203:1: ( (lv_type_9_0= ruleTypeRef ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1204:1: (lv_type_9_0= ruleTypeRef )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1182:1: (lv_type_9_0= ruleTypeRef )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1183:3: lv_type_9_0= ruleTypeRef
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1204:1: (lv_type_9_0= ruleTypeRef )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1205:3: lv_type_9_0= ruleTypeRef
             {
              
             	        newCompositeNode(grammarAccess.getPropertyAccess().getTypeTypeRefParserRuleCall_6_0()); 
             	    
-            pushFollow(FOLLOW_ruleTypeRef_in_ruleProperty2327);
+            pushFollow(FOLLOW_ruleTypeRef_in_ruleProperty2364);
             lv_type_9_0=ruleTypeRef();
 
             state._fsp--;
@@ -2995,13 +3044,13 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1199:2: ( (lv_name_10_0= RULE_ID ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1200:1: (lv_name_10_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1221:2: ( (lv_name_10_0= RULE_ID ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1222:1: (lv_name_10_0= RULE_ID )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1200:1: (lv_name_10_0= RULE_ID )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1201:3: lv_name_10_0= RULE_ID
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1222:1: (lv_name_10_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1223:3: lv_name_10_0= RULE_ID
             {
-            lv_name_10_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleProperty2344); 
+            lv_name_10_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleProperty2381); 
 
             			newLeafNode(lv_name_10_0, grammarAccess.getPropertyAccess().getNameIDTerminalRuleCall_7_0()); 
             		
@@ -3021,20 +3070,20 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_11=(Token)match(input,22,FOLLOW_22_in_ruleProperty2361); 
+            otherlv_11=(Token)match(input,22,FOLLOW_22_in_ruleProperty2398); 
 
                 	newLeafNode(otherlv_11, grammarAccess.getPropertyAccess().getSinceKeyword_8());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1221:1: ( (lv_since_12_0= ruleVersion ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1222:1: (lv_since_12_0= ruleVersion )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1243:1: ( (lv_since_12_0= ruleVersion ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1244:1: (lv_since_12_0= ruleVersion )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1222:1: (lv_since_12_0= ruleVersion )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1223:3: lv_since_12_0= ruleVersion
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1244:1: (lv_since_12_0= ruleVersion )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1245:3: lv_since_12_0= ruleVersion
             {
              
             	        newCompositeNode(grammarAccess.getPropertyAccess().getSinceVersionParserRuleCall_9_0()); 
             	    
-            pushFollow(FOLLOW_ruleVersion_in_ruleProperty2382);
+            pushFollow(FOLLOW_ruleVersion_in_ruleProperty2419);
             lv_since_12_0=ruleVersion();
 
             state._fsp--;
@@ -3056,7 +3105,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_13=(Token)match(input,29,FOLLOW_29_in_ruleProperty2394); 
+            otherlv_13=(Token)match(input,29,FOLLOW_29_in_ruleProperty2431); 
 
                 	newLeafNode(otherlv_13, grammarAccess.getPropertyAccess().getSemicolonKeyword_10());
                 
@@ -3081,7 +3130,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRulePropertyAttribute"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1251:1: entryRulePropertyAttribute returns [EObject current=null] : iv_rulePropertyAttribute= rulePropertyAttribute EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1273:1: entryRulePropertyAttribute returns [EObject current=null] : iv_rulePropertyAttribute= rulePropertyAttribute EOF ;
     public final EObject entryRulePropertyAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -3089,17 +3138,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1252:2: (iv_rulePropertyAttribute= rulePropertyAttribute EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1253:2: iv_rulePropertyAttribute= rulePropertyAttribute EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1274:2: (iv_rulePropertyAttribute= rulePropertyAttribute EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1275:2: iv_rulePropertyAttribute= rulePropertyAttribute EOF
             {
              newCompositeNode(grammarAccess.getPropertyAttributeRule()); 
-            pushFollow(FOLLOW_rulePropertyAttribute_in_entryRulePropertyAttribute2430);
+            pushFollow(FOLLOW_rulePropertyAttribute_in_entryRulePropertyAttribute2467);
             iv_rulePropertyAttribute=rulePropertyAttribute();
 
             state._fsp--;
 
              current =iv_rulePropertyAttribute; 
-            match(input,EOF,FOLLOW_EOF_in_entryRulePropertyAttribute2440); 
+            match(input,EOF,FOLLOW_EOF_in_entryRulePropertyAttribute2477); 
 
             }
 
@@ -3117,7 +3166,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "rulePropertyAttribute"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1260:1: rulePropertyAttribute returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )? ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1282:1: rulePropertyAttribute returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )? ) ;
     public final EObject rulePropertyAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -3128,19 +3177,19 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1263:28: ( ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )? ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1264:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )? )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1285:28: ( ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )? ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1286:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )? )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1264:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )? )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1264:2: ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )?
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1286:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )? )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1286:2: ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )?
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1264:2: ( (lv_name_0_0= RULE_ID ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1265:1: (lv_name_0_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1286:2: ( (lv_name_0_0= RULE_ID ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1287:1: (lv_name_0_0= RULE_ID )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1265:1: (lv_name_0_0= RULE_ID )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1266:3: lv_name_0_0= RULE_ID
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1287:1: (lv_name_0_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1288:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePropertyAttribute2482); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePropertyAttribute2519); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getPropertyAttributeAccess().getNameIDTerminalRuleCall_0_0()); 
             		
@@ -3160,28 +3209,28 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1282:2: (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )?
-            int alt32=2;
-            int LA32_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1304:2: (otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) ) )?
+            int alt33=2;
+            int LA33_0 = input.LA(1);
 
-            if ( (LA32_0==39) ) {
-                alt32=1;
+            if ( (LA33_0==39) ) {
+                alt33=1;
             }
-            switch (alt32) {
+            switch (alt33) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1282:4: otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1304:4: otherlv_1= '=' ( (lv_value_2_0= RULE_ID ) )
                     {
-                    otherlv_1=(Token)match(input,39,FOLLOW_39_in_rulePropertyAttribute2500); 
+                    otherlv_1=(Token)match(input,39,FOLLOW_39_in_rulePropertyAttribute2537); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getPropertyAttributeAccess().getEqualsSignKeyword_1_0());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1286:1: ( (lv_value_2_0= RULE_ID ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1287:1: (lv_value_2_0= RULE_ID )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1308:1: ( (lv_value_2_0= RULE_ID ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1309:1: (lv_value_2_0= RULE_ID )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1287:1: (lv_value_2_0= RULE_ID )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1288:3: lv_value_2_0= RULE_ID
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1309:1: (lv_value_2_0= RULE_ID )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1310:3: lv_value_2_0= RULE_ID
                     {
-                    lv_value_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePropertyAttribute2517); 
+                    lv_value_2_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_rulePropertyAttribute2554); 
 
                     			newLeafNode(lv_value_2_0, grammarAccess.getPropertyAttributeAccess().getValueIDTerminalRuleCall_1_1_0()); 
                     		
@@ -3228,7 +3277,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEnum"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1312:1: entryRuleEnum returns [EObject current=null] : iv_ruleEnum= ruleEnum EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1334:1: entryRuleEnum returns [EObject current=null] : iv_ruleEnum= ruleEnum EOF ;
     public final EObject entryRuleEnum() throws RecognitionException {
         EObject current = null;
 
@@ -3236,17 +3285,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1313:2: (iv_ruleEnum= ruleEnum EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1314:2: iv_ruleEnum= ruleEnum EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1335:2: (iv_ruleEnum= ruleEnum EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1336:2: iv_ruleEnum= ruleEnum EOF
             {
              newCompositeNode(grammarAccess.getEnumRule()); 
-            pushFollow(FOLLOW_ruleEnum_in_entryRuleEnum2560);
+            pushFollow(FOLLOW_ruleEnum_in_entryRuleEnum2597);
             iv_ruleEnum=ruleEnum();
 
             state._fsp--;
 
              current =iv_ruleEnum; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEnum2570); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEnum2607); 
 
             }
 
@@ -3264,7 +3313,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEnum"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1321:1: ruleEnum returns [EObject current=null] : (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}' ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1343:1: ruleEnum returns [EObject current=null] : (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}' ) ;
     public final EObject ruleEnum() throws RecognitionException {
         EObject current = null;
 
@@ -3281,23 +3330,23 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1324:28: ( (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}' ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1325:1: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1346:28: ( (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}' ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1347:1: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}' )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1325:1: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}' )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1325:3: otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}'
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1347:1: (otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1347:3: otherlv_0= 'enum' ( (lv_name_1_0= RULE_ID ) ) otherlv_2= '{' ( (lv_elements_3_0= ruleEnumElement ) ) (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )* otherlv_6= '}'
             {
-            otherlv_0=(Token)match(input,40,FOLLOW_40_in_ruleEnum2607); 
+            otherlv_0=(Token)match(input,40,FOLLOW_40_in_ruleEnum2644); 
 
                 	newLeafNode(otherlv_0, grammarAccess.getEnumAccess().getEnumKeyword_0());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1329:1: ( (lv_name_1_0= RULE_ID ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1330:1: (lv_name_1_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1351:1: ( (lv_name_1_0= RULE_ID ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1352:1: (lv_name_1_0= RULE_ID )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1330:1: (lv_name_1_0= RULE_ID )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1331:3: lv_name_1_0= RULE_ID
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1352:1: (lv_name_1_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1353:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEnum2624); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEnum2661); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getEnumAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -3317,20 +3366,20 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_2=(Token)match(input,23,FOLLOW_23_in_ruleEnum2641); 
+            otherlv_2=(Token)match(input,23,FOLLOW_23_in_ruleEnum2678); 
 
                 	newLeafNode(otherlv_2, grammarAccess.getEnumAccess().getLeftCurlyBracketKeyword_2());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1351:1: ( (lv_elements_3_0= ruleEnumElement ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1352:1: (lv_elements_3_0= ruleEnumElement )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1373:1: ( (lv_elements_3_0= ruleEnumElement ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1374:1: (lv_elements_3_0= ruleEnumElement )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1352:1: (lv_elements_3_0= ruleEnumElement )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1353:3: lv_elements_3_0= ruleEnumElement
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1374:1: (lv_elements_3_0= ruleEnumElement )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1375:3: lv_elements_3_0= ruleEnumElement
             {
              
             	        newCompositeNode(grammarAccess.getEnumAccess().getElementsEnumElementParserRuleCall_3_0()); 
             	    
-            pushFollow(FOLLOW_ruleEnumElement_in_ruleEnum2662);
+            pushFollow(FOLLOW_ruleEnumElement_in_ruleEnum2699);
             lv_elements_3_0=ruleEnumElement();
 
             state._fsp--;
@@ -3352,35 +3401,35 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1369:2: (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )*
-            loop33:
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1391:2: (otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) ) )*
+            loop34:
             do {
-                int alt33=2;
-                int LA33_0 = input.LA(1);
+                int alt34=2;
+                int LA34_0 = input.LA(1);
 
-                if ( (LA33_0==35) ) {
-                    alt33=1;
+                if ( (LA34_0==35) ) {
+                    alt34=1;
                 }
 
 
-                switch (alt33) {
+                switch (alt34) {
             	case 1 :
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1369:4: otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) )
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1391:4: otherlv_4= ',' ( (lv_elements_5_0= ruleEnumElement ) )
             	    {
-            	    otherlv_4=(Token)match(input,35,FOLLOW_35_in_ruleEnum2675); 
+            	    otherlv_4=(Token)match(input,35,FOLLOW_35_in_ruleEnum2712); 
 
             	        	newLeafNode(otherlv_4, grammarAccess.getEnumAccess().getCommaKeyword_4_0());
             	        
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1373:1: ( (lv_elements_5_0= ruleEnumElement ) )
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1374:1: (lv_elements_5_0= ruleEnumElement )
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1395:1: ( (lv_elements_5_0= ruleEnumElement ) )
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1396:1: (lv_elements_5_0= ruleEnumElement )
             	    {
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1374:1: (lv_elements_5_0= ruleEnumElement )
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1375:3: lv_elements_5_0= ruleEnumElement
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1396:1: (lv_elements_5_0= ruleEnumElement )
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1397:3: lv_elements_5_0= ruleEnumElement
             	    {
             	     
             	    	        newCompositeNode(grammarAccess.getEnumAccess().getElementsEnumElementParserRuleCall_4_1_0()); 
             	    	    
-            	    pushFollow(FOLLOW_ruleEnumElement_in_ruleEnum2696);
+            	    pushFollow(FOLLOW_ruleEnumElement_in_ruleEnum2733);
             	    lv_elements_5_0=ruleEnumElement();
 
             	    state._fsp--;
@@ -3407,11 +3456,11 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop33;
+            	    break loop34;
                 }
             } while (true);
 
-            otherlv_6=(Token)match(input,24,FOLLOW_24_in_ruleEnum2710); 
+            otherlv_6=(Token)match(input,24,FOLLOW_24_in_ruleEnum2747); 
 
                 	newLeafNode(otherlv_6, grammarAccess.getEnumAccess().getRightCurlyBracketKeyword_5());
                 
@@ -3436,7 +3485,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleEnumElement"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1403:1: entryRuleEnumElement returns [EObject current=null] : iv_ruleEnumElement= ruleEnumElement EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1425:1: entryRuleEnumElement returns [EObject current=null] : iv_ruleEnumElement= ruleEnumElement EOF ;
     public final EObject entryRuleEnumElement() throws RecognitionException {
         EObject current = null;
 
@@ -3444,17 +3493,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1404:2: (iv_ruleEnumElement= ruleEnumElement EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1405:2: iv_ruleEnumElement= ruleEnumElement EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1426:2: (iv_ruleEnumElement= ruleEnumElement EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1427:2: iv_ruleEnumElement= ruleEnumElement EOF
             {
              newCompositeNode(grammarAccess.getEnumElementRule()); 
-            pushFollow(FOLLOW_ruleEnumElement_in_entryRuleEnumElement2746);
+            pushFollow(FOLLOW_ruleEnumElement_in_entryRuleEnumElement2783);
             iv_ruleEnumElement=ruleEnumElement();
 
             state._fsp--;
 
              current =iv_ruleEnumElement; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleEnumElement2756); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleEnumElement2793); 
 
             }
 
@@ -3472,7 +3521,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleEnumElement"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1412:1: ruleEnumElement returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )? ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1434:1: ruleEnumElement returns [EObject current=null] : ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )? ) ;
     public final EObject ruleEnumElement() throws RecognitionException {
         EObject current = null;
 
@@ -3483,19 +3532,19 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1415:28: ( ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )? ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1416:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )? )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1437:28: ( ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )? ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1438:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )? )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1416:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )? )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1416:2: ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )?
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1438:1: ( ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )? )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1438:2: ( (lv_name_0_0= RULE_ID ) ) (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )?
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1416:2: ( (lv_name_0_0= RULE_ID ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1417:1: (lv_name_0_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1438:2: ( (lv_name_0_0= RULE_ID ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1439:1: (lv_name_0_0= RULE_ID )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1417:1: (lv_name_0_0= RULE_ID )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1418:3: lv_name_0_0= RULE_ID
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1439:1: (lv_name_0_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1440:3: lv_name_0_0= RULE_ID
             {
-            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEnumElement2798); 
+            lv_name_0_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleEnumElement2835); 
 
             			newLeafNode(lv_name_0_0, grammarAccess.getEnumElementAccess().getNameIDTerminalRuleCall_0_0()); 
             		
@@ -3515,28 +3564,28 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1434:2: (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )?
-            int alt34=2;
-            int LA34_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1456:2: (otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) ) )?
+            int alt35=2;
+            int LA35_0 = input.LA(1);
 
-            if ( (LA34_0==39) ) {
-                alt34=1;
+            if ( (LA35_0==39) ) {
+                alt35=1;
             }
-            switch (alt34) {
+            switch (alt35) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1434:4: otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1456:4: otherlv_1= '=' ( (lv_value_2_0= RULE_INT ) )
                     {
-                    otherlv_1=(Token)match(input,39,FOLLOW_39_in_ruleEnumElement2816); 
+                    otherlv_1=(Token)match(input,39,FOLLOW_39_in_ruleEnumElement2853); 
 
                         	newLeafNode(otherlv_1, grammarAccess.getEnumElementAccess().getEqualsSignKeyword_1_0());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1438:1: ( (lv_value_2_0= RULE_INT ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1439:1: (lv_value_2_0= RULE_INT )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1460:1: ( (lv_value_2_0= RULE_INT ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1461:1: (lv_value_2_0= RULE_INT )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1439:1: (lv_value_2_0= RULE_INT )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1440:3: lv_value_2_0= RULE_INT
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1461:1: (lv_value_2_0= RULE_INT )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1462:3: lv_value_2_0= RULE_INT
                     {
-                    lv_value_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleEnumElement2833); 
+                    lv_value_2_0=(Token)match(input,RULE_INT,FOLLOW_RULE_INT_in_ruleEnumElement2870); 
 
                     			newLeafNode(lv_value_2_0, grammarAccess.getEnumElementAccess().getValueINTTerminalRuleCall_1_1_0()); 
                     		
@@ -3583,7 +3632,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleTypeDef"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1464:1: entryRuleTypeDef returns [EObject current=null] : iv_ruleTypeDef= ruleTypeDef EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1486:1: entryRuleTypeDef returns [EObject current=null] : iv_ruleTypeDef= ruleTypeDef EOF ;
     public final EObject entryRuleTypeDef() throws RecognitionException {
         EObject current = null;
 
@@ -3591,17 +3640,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1465:2: (iv_ruleTypeDef= ruleTypeDef EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1466:2: iv_ruleTypeDef= ruleTypeDef EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1487:2: (iv_ruleTypeDef= ruleTypeDef EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1488:2: iv_ruleTypeDef= ruleTypeDef EOF
             {
              newCompositeNode(grammarAccess.getTypeDefRule()); 
-            pushFollow(FOLLOW_ruleTypeDef_in_entryRuleTypeDef2876);
+            pushFollow(FOLLOW_ruleTypeDef_in_entryRuleTypeDef2913);
             iv_ruleTypeDef=ruleTypeDef();
 
             state._fsp--;
 
              current =iv_ruleTypeDef; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleTypeDef2886); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleTypeDef2923); 
 
             }
 
@@ -3619,7 +3668,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTypeDef"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1473:1: ruleTypeDef returns [EObject current=null] : ( ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';' ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1495:1: ruleTypeDef returns [EObject current=null] : ( ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';' ) ;
     public final EObject ruleTypeDef() throws RecognitionException {
         EObject current = null;
 
@@ -3648,30 +3697,30 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1476:28: ( ( ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';' ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1477:1: ( ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1498:28: ( ( ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';' ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1499:1: ( ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';' )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1477:1: ( ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';' )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1477:2: ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';'
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1499:1: ( ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1499:2: ( (lv_doc_0_0= ruleDocu ) )? otherlv_1= 'typedef' ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) ) ( (lv_name_14_0= RULE_ID ) ) otherlv_15= ';'
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1477:2: ( (lv_doc_0_0= ruleDocu ) )?
-            int alt35=2;
-            int LA35_0 = input.LA(1);
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1499:2: ( (lv_doc_0_0= ruleDocu ) )?
+            int alt36=2;
+            int LA36_0 = input.LA(1);
 
-            if ( (LA35_0==RULE_JDOC) ) {
-                alt35=1;
+            if ( (LA36_0==RULE_JDOC) ) {
+                alt36=1;
             }
-            switch (alt35) {
+            switch (alt36) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1478:1: (lv_doc_0_0= ruleDocu )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1500:1: (lv_doc_0_0= ruleDocu )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1478:1: (lv_doc_0_0= ruleDocu )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1479:3: lv_doc_0_0= ruleDocu
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1500:1: (lv_doc_0_0= ruleDocu )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1501:3: lv_doc_0_0= ruleDocu
                     {
                      
                     	        newCompositeNode(grammarAccess.getTypeDefAccess().getDocDocuParserRuleCall_0_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleDocu_in_ruleTypeDef2932);
+                    pushFollow(FOLLOW_ruleDocu_in_ruleTypeDef2969);
                     lv_doc_0_0=ruleDocu();
 
                     state._fsp--;
@@ -3696,31 +3745,31 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_1=(Token)match(input,41,FOLLOW_41_in_ruleTypeDef2945); 
+            otherlv_1=(Token)match(input,41,FOLLOW_41_in_ruleTypeDef2982); 
 
                 	newLeafNode(otherlv_1, grammarAccess.getTypeDefAccess().getTypedefKeyword_1());
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1499:1: ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) )
-            int alt38=3;
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1521:1: ( ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' ) | ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' ) | ( (lv_typeRef_13_0= ruleTypeRef ) ) )
+            int alt39=3;
             switch ( input.LA(1) ) {
             case 42:
                 {
-                alt38=1;
+                alt39=1;
                 }
                 break;
             case 43:
                 {
-                int LA38_2 = input.LA(2);
+                int LA39_2 = input.LA(2);
 
-                if ( (LA38_2==27) ) {
-                    alt38=2;
+                if ( (LA39_2==27) ) {
+                    alt39=2;
                 }
-                else if ( (LA38_2==RULE_ID) ) {
-                    alt38=3;
+                else if ( (LA39_2==RULE_ID) ) {
+                    alt39=3;
                 }
                 else {
                     NoViableAltException nvae =
-                        new NoViableAltException("", 38, 2, input);
+                        new NoViableAltException("", 39, 2, input);
 
                     throw nvae;
                 }
@@ -3731,30 +3780,30 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
             case 44:
             case 45:
                 {
-                alt38=3;
+                alt39=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 38, 0, input);
+                    new NoViableAltException("", 39, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt38) {
+            switch (alt39) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1499:2: ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1521:2: ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1499:2: ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1499:3: ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1521:2: ( ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}' )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1521:3: ( (lv_struct_2_0= 'struct' ) ) otherlv_3= '{' ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+ otherlv_6= '}'
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1499:3: ( (lv_struct_2_0= 'struct' ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1500:1: (lv_struct_2_0= 'struct' )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1521:3: ( (lv_struct_2_0= 'struct' ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1522:1: (lv_struct_2_0= 'struct' )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1500:1: (lv_struct_2_0= 'struct' )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1501:3: lv_struct_2_0= 'struct'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1522:1: (lv_struct_2_0= 'struct' )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1523:3: lv_struct_2_0= 'struct'
                     {
-                    lv_struct_2_0=(Token)match(input,42,FOLLOW_42_in_ruleTypeDef2965); 
+                    lv_struct_2_0=(Token)match(input,42,FOLLOW_42_in_ruleTypeDef3002); 
 
                             newLeafNode(lv_struct_2_0, grammarAccess.getTypeDefAccess().getStructStructKeyword_2_0_0_0());
                         
@@ -3770,36 +3819,36 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_3=(Token)match(input,23,FOLLOW_23_in_ruleTypeDef2990); 
+                    otherlv_3=(Token)match(input,23,FOLLOW_23_in_ruleTypeDef3027); 
 
                         	newLeafNode(otherlv_3, grammarAccess.getTypeDefAccess().getLeftCurlyBracketKeyword_2_0_1());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1518:1: ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+
-                    int cnt36=0;
-                    loop36:
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1540:1: ( ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';' )+
+                    int cnt37=0;
+                    loop37:
                     do {
-                        int alt36=2;
-                        int LA36_0 = input.LA(1);
+                        int alt37=2;
+                        int LA37_0 = input.LA(1);
 
-                        if ( (LA36_0==RULE_ID||LA36_0==16||(LA36_0>=43 && LA36_0<=45)) ) {
-                            alt36=1;
+                        if ( (LA37_0==RULE_ID||LA37_0==16||(LA37_0>=43 && LA37_0<=45)) ) {
+                            alt37=1;
                         }
 
 
-                        switch (alt36) {
+                        switch (alt37) {
                     	case 1 :
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1518:2: ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';'
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1540:2: ( (lv_attributes_4_0= ruleTypeStructAttribute ) ) otherlv_5= ';'
                     	    {
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1518:2: ( (lv_attributes_4_0= ruleTypeStructAttribute ) )
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1519:1: (lv_attributes_4_0= ruleTypeStructAttribute )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1540:2: ( (lv_attributes_4_0= ruleTypeStructAttribute ) )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1541:1: (lv_attributes_4_0= ruleTypeStructAttribute )
                     	    {
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1519:1: (lv_attributes_4_0= ruleTypeStructAttribute )
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1520:3: lv_attributes_4_0= ruleTypeStructAttribute
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1541:1: (lv_attributes_4_0= ruleTypeStructAttribute )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1542:3: lv_attributes_4_0= ruleTypeStructAttribute
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getTypeDefAccess().getAttributesTypeStructAttributeParserRuleCall_2_0_2_0_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3012);
+                    	    pushFollow(FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3049);
                     	    lv_attributes_4_0=ruleTypeStructAttribute();
 
                     	    state._fsp--;
@@ -3821,7 +3870,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
                     	    }
 
-                    	    otherlv_5=(Token)match(input,29,FOLLOW_29_in_ruleTypeDef3024); 
+                    	    otherlv_5=(Token)match(input,29,FOLLOW_29_in_ruleTypeDef3061); 
 
                     	        	newLeafNode(otherlv_5, grammarAccess.getTypeDefAccess().getSemicolonKeyword_2_0_2_1());
                     	        
@@ -3830,15 +3879,15 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    if ( cnt36 >= 1 ) break loop36;
+                    	    if ( cnt37 >= 1 ) break loop37;
                                 EarlyExitException eee =
-                                    new EarlyExitException(36, input);
+                                    new EarlyExitException(37, input);
                                 throw eee;
                         }
-                        cnt36++;
+                        cnt37++;
                     } while (true);
 
-                    otherlv_6=(Token)match(input,24,FOLLOW_24_in_ruleTypeDef3038); 
+                    otherlv_6=(Token)match(input,24,FOLLOW_24_in_ruleTypeDef3075); 
 
                         	newLeafNode(otherlv_6, grammarAccess.getTypeDefAccess().getRightCurlyBracketKeyword_2_0_3());
                         
@@ -3849,18 +3898,18 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1545:6: ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1567:6: ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1545:6: ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1545:7: ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1567:6: ( ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')' )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1567:7: ( (lv_block_7_0= 'void' ) ) otherlv_8= '(' ( (lv_attributes_9_0= ruleTypeStructAttribute ) ) (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )* otherlv_12= ')'
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1545:7: ( (lv_block_7_0= 'void' ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1546:1: (lv_block_7_0= 'void' )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1567:7: ( (lv_block_7_0= 'void' ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1568:1: (lv_block_7_0= 'void' )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1546:1: (lv_block_7_0= 'void' )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1547:3: lv_block_7_0= 'void'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1568:1: (lv_block_7_0= 'void' )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1569:3: lv_block_7_0= 'void'
                     {
-                    lv_block_7_0=(Token)match(input,43,FOLLOW_43_in_ruleTypeDef3064); 
+                    lv_block_7_0=(Token)match(input,43,FOLLOW_43_in_ruleTypeDef3101); 
 
                             newLeafNode(lv_block_7_0, grammarAccess.getTypeDefAccess().getBlockVoidKeyword_2_1_0_0());
                         
@@ -3876,20 +3925,20 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    otherlv_8=(Token)match(input,27,FOLLOW_27_in_ruleTypeDef3089); 
+                    otherlv_8=(Token)match(input,27,FOLLOW_27_in_ruleTypeDef3126); 
 
                         	newLeafNode(otherlv_8, grammarAccess.getTypeDefAccess().getLeftParenthesisKeyword_2_1_1());
                         
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1564:1: ( (lv_attributes_9_0= ruleTypeStructAttribute ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1565:1: (lv_attributes_9_0= ruleTypeStructAttribute )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1586:1: ( (lv_attributes_9_0= ruleTypeStructAttribute ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1587:1: (lv_attributes_9_0= ruleTypeStructAttribute )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1565:1: (lv_attributes_9_0= ruleTypeStructAttribute )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1566:3: lv_attributes_9_0= ruleTypeStructAttribute
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1587:1: (lv_attributes_9_0= ruleTypeStructAttribute )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1588:3: lv_attributes_9_0= ruleTypeStructAttribute
                     {
                      
                     	        newCompositeNode(grammarAccess.getTypeDefAccess().getAttributesTypeStructAttributeParserRuleCall_2_1_2_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3110);
+                    pushFollow(FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3147);
                     lv_attributes_9_0=ruleTypeStructAttribute();
 
                     state._fsp--;
@@ -3911,35 +3960,35 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
                     }
 
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1582:2: (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )*
-                    loop37:
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1604:2: (otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) ) )*
+                    loop38:
                     do {
-                        int alt37=2;
-                        int LA37_0 = input.LA(1);
+                        int alt38=2;
+                        int LA38_0 = input.LA(1);
 
-                        if ( (LA37_0==35) ) {
-                            alt37=1;
+                        if ( (LA38_0==35) ) {
+                            alt38=1;
                         }
 
 
-                        switch (alt37) {
+                        switch (alt38) {
                     	case 1 :
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1582:4: otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1604:4: otherlv_10= ',' ( (lv_attributes_11_0= ruleTypeStructAttribute ) )
                     	    {
-                    	    otherlv_10=(Token)match(input,35,FOLLOW_35_in_ruleTypeDef3123); 
+                    	    otherlv_10=(Token)match(input,35,FOLLOW_35_in_ruleTypeDef3160); 
 
                     	        	newLeafNode(otherlv_10, grammarAccess.getTypeDefAccess().getCommaKeyword_2_1_3_0());
                     	        
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1586:1: ( (lv_attributes_11_0= ruleTypeStructAttribute ) )
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1587:1: (lv_attributes_11_0= ruleTypeStructAttribute )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1608:1: ( (lv_attributes_11_0= ruleTypeStructAttribute ) )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1609:1: (lv_attributes_11_0= ruleTypeStructAttribute )
                     	    {
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1587:1: (lv_attributes_11_0= ruleTypeStructAttribute )
-                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1588:3: lv_attributes_11_0= ruleTypeStructAttribute
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1609:1: (lv_attributes_11_0= ruleTypeStructAttribute )
+                    	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1610:3: lv_attributes_11_0= ruleTypeStructAttribute
                     	    {
                     	     
                     	    	        newCompositeNode(grammarAccess.getTypeDefAccess().getAttributesTypeStructAttributeParserRuleCall_2_1_3_1_0()); 
                     	    	    
-                    	    pushFollow(FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3144);
+                    	    pushFollow(FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3181);
                     	    lv_attributes_11_0=ruleTypeStructAttribute();
 
                     	    state._fsp--;
@@ -3966,11 +4015,11 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     	    break;
 
                     	default :
-                    	    break loop37;
+                    	    break loop38;
                         }
                     } while (true);
 
-                    otherlv_12=(Token)match(input,28,FOLLOW_28_in_ruleTypeDef3158); 
+                    otherlv_12=(Token)match(input,28,FOLLOW_28_in_ruleTypeDef3195); 
 
                         	newLeafNode(otherlv_12, grammarAccess.getTypeDefAccess().getRightParenthesisKeyword_2_1_4());
                         
@@ -3981,18 +4030,18 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1609:6: ( (lv_typeRef_13_0= ruleTypeRef ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1631:6: ( (lv_typeRef_13_0= ruleTypeRef ) )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1609:6: ( (lv_typeRef_13_0= ruleTypeRef ) )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1610:1: (lv_typeRef_13_0= ruleTypeRef )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1631:6: ( (lv_typeRef_13_0= ruleTypeRef ) )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1632:1: (lv_typeRef_13_0= ruleTypeRef )
                     {
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1610:1: (lv_typeRef_13_0= ruleTypeRef )
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1611:3: lv_typeRef_13_0= ruleTypeRef
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1632:1: (lv_typeRef_13_0= ruleTypeRef )
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1633:3: lv_typeRef_13_0= ruleTypeRef
                     {
                      
                     	        newCompositeNode(grammarAccess.getTypeDefAccess().getTypeRefTypeRefParserRuleCall_2_2_0()); 
                     	    
-                    pushFollow(FOLLOW_ruleTypeRef_in_ruleTypeDef3186);
+                    pushFollow(FOLLOW_ruleTypeRef_in_ruleTypeDef3223);
                     lv_typeRef_13_0=ruleTypeRef();
 
                     state._fsp--;
@@ -4020,13 +4069,13 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1627:3: ( (lv_name_14_0= RULE_ID ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1628:1: (lv_name_14_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1649:3: ( (lv_name_14_0= RULE_ID ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1650:1: (lv_name_14_0= RULE_ID )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1628:1: (lv_name_14_0= RULE_ID )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1629:3: lv_name_14_0= RULE_ID
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1650:1: (lv_name_14_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1651:3: lv_name_14_0= RULE_ID
             {
-            lv_name_14_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleTypeDef3204); 
+            lv_name_14_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleTypeDef3241); 
 
             			newLeafNode(lv_name_14_0, grammarAccess.getTypeDefAccess().getNameIDTerminalRuleCall_3_0()); 
             		
@@ -4046,7 +4095,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            otherlv_15=(Token)match(input,29,FOLLOW_29_in_ruleTypeDef3221); 
+            otherlv_15=(Token)match(input,29,FOLLOW_29_in_ruleTypeDef3258); 
 
                 	newLeafNode(otherlv_15, grammarAccess.getTypeDefAccess().getSemicolonKeyword_4());
                 
@@ -4071,7 +4120,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleTypeStructAttribute"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1657:1: entryRuleTypeStructAttribute returns [EObject current=null] : iv_ruleTypeStructAttribute= ruleTypeStructAttribute EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1679:1: entryRuleTypeStructAttribute returns [EObject current=null] : iv_ruleTypeStructAttribute= ruleTypeStructAttribute EOF ;
     public final EObject entryRuleTypeStructAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -4079,17 +4128,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1658:2: (iv_ruleTypeStructAttribute= ruleTypeStructAttribute EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1659:2: iv_ruleTypeStructAttribute= ruleTypeStructAttribute EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1680:2: (iv_ruleTypeStructAttribute= ruleTypeStructAttribute EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1681:2: iv_ruleTypeStructAttribute= ruleTypeStructAttribute EOF
             {
              newCompositeNode(grammarAccess.getTypeStructAttributeRule()); 
-            pushFollow(FOLLOW_ruleTypeStructAttribute_in_entryRuleTypeStructAttribute3257);
+            pushFollow(FOLLOW_ruleTypeStructAttribute_in_entryRuleTypeStructAttribute3294);
             iv_ruleTypeStructAttribute=ruleTypeStructAttribute();
 
             state._fsp--;
 
              current =iv_ruleTypeStructAttribute; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleTypeStructAttribute3267); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleTypeStructAttribute3304); 
 
             }
 
@@ -4107,7 +4156,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleTypeStructAttribute"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1666:1: ruleTypeStructAttribute returns [EObject current=null] : ( ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) ) ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1688:1: ruleTypeStructAttribute returns [EObject current=null] : ( ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) ) ) ;
     public final EObject ruleTypeStructAttribute() throws RecognitionException {
         EObject current = null;
 
@@ -4118,22 +4167,22 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1669:28: ( ( ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) ) ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1670:1: ( ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1691:28: ( ( ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) ) ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1692:1: ( ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) ) )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1670:1: ( ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1670:2: ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1692:1: ( ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1692:2: ( (lv_typeRef_0_0= ruleTypeRef ) ) ( (lv_name_1_0= RULE_ID ) )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1670:2: ( (lv_typeRef_0_0= ruleTypeRef ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1671:1: (lv_typeRef_0_0= ruleTypeRef )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1692:2: ( (lv_typeRef_0_0= ruleTypeRef ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1693:1: (lv_typeRef_0_0= ruleTypeRef )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1671:1: (lv_typeRef_0_0= ruleTypeRef )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1672:3: lv_typeRef_0_0= ruleTypeRef
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1693:1: (lv_typeRef_0_0= ruleTypeRef )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1694:3: lv_typeRef_0_0= ruleTypeRef
             {
              
             	        newCompositeNode(grammarAccess.getTypeStructAttributeAccess().getTypeRefTypeRefParserRuleCall_0_0()); 
             	    
-            pushFollow(FOLLOW_ruleTypeRef_in_ruleTypeStructAttribute3313);
+            pushFollow(FOLLOW_ruleTypeRef_in_ruleTypeStructAttribute3350);
             lv_typeRef_0_0=ruleTypeRef();
 
             state._fsp--;
@@ -4155,13 +4204,13 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
             }
 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1688:2: ( (lv_name_1_0= RULE_ID ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1689:1: (lv_name_1_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1710:2: ( (lv_name_1_0= RULE_ID ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1711:1: (lv_name_1_0= RULE_ID )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1689:1: (lv_name_1_0= RULE_ID )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1690:3: lv_name_1_0= RULE_ID
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1711:1: (lv_name_1_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1712:3: lv_name_1_0= RULE_ID
             {
-            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleTypeStructAttribute3330); 
+            lv_name_1_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleTypeStructAttribute3367); 
 
             			newLeafNode(lv_name_1_0, grammarAccess.getTypeStructAttributeAccess().getNameIDTerminalRuleCall_1_0()); 
             		
@@ -4202,7 +4251,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleBuiltinType"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1714:1: entryRuleBuiltinType returns [String current=null] : iv_ruleBuiltinType= ruleBuiltinType EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1736:1: entryRuleBuiltinType returns [String current=null] : iv_ruleBuiltinType= ruleBuiltinType EOF ;
     public final String entryRuleBuiltinType() throws RecognitionException {
         String current = null;
 
@@ -4210,17 +4259,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1715:2: (iv_ruleBuiltinType= ruleBuiltinType EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1716:2: iv_ruleBuiltinType= ruleBuiltinType EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1737:2: (iv_ruleBuiltinType= ruleBuiltinType EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1738:2: iv_ruleBuiltinType= ruleBuiltinType EOF
             {
              newCompositeNode(grammarAccess.getBuiltinTypeRule()); 
-            pushFollow(FOLLOW_ruleBuiltinType_in_entryRuleBuiltinType3372);
+            pushFollow(FOLLOW_ruleBuiltinType_in_entryRuleBuiltinType3409);
             iv_ruleBuiltinType=ruleBuiltinType();
 
             state._fsp--;
 
              current =iv_ruleBuiltinType.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleBuiltinType3383); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleBuiltinType3420); 
 
             }
 
@@ -4238,7 +4287,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleBuiltinType"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1723:1: ruleBuiltinType returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= 'void' | kw= 'BOOL' | kw= 'double' ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1745:1: ruleBuiltinType returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (kw= 'void' | kw= 'BOOL' | kw= 'double' ) ;
     public final AntlrDatatypeRuleToken ruleBuiltinType() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -4247,39 +4296,39 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1726:28: ( (kw= 'void' | kw= 'BOOL' | kw= 'double' ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1727:1: (kw= 'void' | kw= 'BOOL' | kw= 'double' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1748:28: ( (kw= 'void' | kw= 'BOOL' | kw= 'double' ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1749:1: (kw= 'void' | kw= 'BOOL' | kw= 'double' )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1727:1: (kw= 'void' | kw= 'BOOL' | kw= 'double' )
-            int alt39=3;
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1749:1: (kw= 'void' | kw= 'BOOL' | kw= 'double' )
+            int alt40=3;
             switch ( input.LA(1) ) {
             case 43:
                 {
-                alt39=1;
+                alt40=1;
                 }
                 break;
             case 44:
                 {
-                alt39=2;
+                alt40=2;
                 }
                 break;
             case 45:
                 {
-                alt39=3;
+                alt40=3;
                 }
                 break;
             default:
                 NoViableAltException nvae =
-                    new NoViableAltException("", 39, 0, input);
+                    new NoViableAltException("", 40, 0, input);
 
                 throw nvae;
             }
 
-            switch (alt39) {
+            switch (alt40) {
                 case 1 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1728:2: kw= 'void'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1750:2: kw= 'void'
                     {
-                    kw=(Token)match(input,43,FOLLOW_43_in_ruleBuiltinType3421); 
+                    kw=(Token)match(input,43,FOLLOW_43_in_ruleBuiltinType3458); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getBuiltinTypeAccess().getVoidKeyword_0()); 
@@ -4288,9 +4337,9 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 2 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1735:2: kw= 'BOOL'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1757:2: kw= 'BOOL'
                     {
-                    kw=(Token)match(input,44,FOLLOW_44_in_ruleBuiltinType3440); 
+                    kw=(Token)match(input,44,FOLLOW_44_in_ruleBuiltinType3477); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getBuiltinTypeAccess().getBOOLKeyword_1()); 
@@ -4299,9 +4348,9 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
                     }
                     break;
                 case 3 :
-                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1742:2: kw= 'double'
+                    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1764:2: kw= 'double'
                     {
-                    kw=(Token)match(input,45,FOLLOW_45_in_ruleBuiltinType3459); 
+                    kw=(Token)match(input,45,FOLLOW_45_in_ruleBuiltinType3496); 
 
                             current.merge(kw);
                             newLeafNode(kw, grammarAccess.getBuiltinTypeAccess().getDoubleKeyword_2()); 
@@ -4330,7 +4379,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleQualifiedName"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1755:1: entryRuleQualifiedName returns [String current=null] : iv_ruleQualifiedName= ruleQualifiedName EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1777:1: entryRuleQualifiedName returns [String current=null] : iv_ruleQualifiedName= ruleQualifiedName EOF ;
     public final String entryRuleQualifiedName() throws RecognitionException {
         String current = null;
 
@@ -4338,17 +4387,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1756:2: (iv_ruleQualifiedName= ruleQualifiedName EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1757:2: iv_ruleQualifiedName= ruleQualifiedName EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1778:2: (iv_ruleQualifiedName= ruleQualifiedName EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1779:2: iv_ruleQualifiedName= ruleQualifiedName EOF
             {
              newCompositeNode(grammarAccess.getQualifiedNameRule()); 
-            pushFollow(FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName3500);
+            pushFollow(FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName3537);
             iv_ruleQualifiedName=ruleQualifiedName();
 
             state._fsp--;
 
              current =iv_ruleQualifiedName.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedName3511); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedName3548); 
 
             }
 
@@ -4366,7 +4415,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleQualifiedName"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1764:1: ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1786:1: ruleQualifiedName returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* ) ;
     public final AntlrDatatypeRuleToken ruleQualifiedName() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -4379,16 +4428,16 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1767:28: ( (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1768:1: (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1789:28: ( (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1790:1: (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1768:1: (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1769:5: this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )*
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1790:1: (this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )* )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1791:5: this_ValidID_0= ruleValidID (kw= '.' this_ValidID_2= ruleValidID )*
             {
              
                     newCompositeNode(grammarAccess.getQualifiedNameAccess().getValidIDParserRuleCall_0()); 
                 
-            pushFollow(FOLLOW_ruleValidID_in_ruleQualifiedName3558);
+            pushFollow(FOLLOW_ruleValidID_in_ruleQualifiedName3595);
             this_ValidID_0=ruleValidID();
 
             state._fsp--;
@@ -4399,28 +4448,28 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
              
                     afterParserOrEnumRuleCall();
                 
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1779:1: (kw= '.' this_ValidID_2= ruleValidID )*
-            loop40:
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1801:1: (kw= '.' this_ValidID_2= ruleValidID )*
+            loop41:
             do {
-                int alt40=2;
-                int LA40_0 = input.LA(1);
+                int alt41=2;
+                int LA41_0 = input.LA(1);
 
-                if ( (LA40_0==37) ) {
-                    int LA40_2 = input.LA(2);
+                if ( (LA41_0==37) ) {
+                    int LA41_2 = input.LA(2);
 
-                    if ( (LA40_2==RULE_ID) ) {
-                        alt40=1;
+                    if ( (LA41_2==RULE_ID) ) {
+                        alt41=1;
                     }
 
 
                 }
 
 
-                switch (alt40) {
+                switch (alt41) {
             	case 1 :
-            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1780:2: kw= '.' this_ValidID_2= ruleValidID
+            	    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1802:2: kw= '.' this_ValidID_2= ruleValidID
             	    {
-            	    kw=(Token)match(input,37,FOLLOW_37_in_ruleQualifiedName3577); 
+            	    kw=(Token)match(input,37,FOLLOW_37_in_ruleQualifiedName3614); 
 
             	            current.merge(kw);
             	            newLeafNode(kw, grammarAccess.getQualifiedNameAccess().getFullStopKeyword_1_0()); 
@@ -4428,7 +4477,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
             	     
             	            newCompositeNode(grammarAccess.getQualifiedNameAccess().getValidIDParserRuleCall_1_1()); 
             	        
-            	    pushFollow(FOLLOW_ruleValidID_in_ruleQualifiedName3599);
+            	    pushFollow(FOLLOW_ruleValidID_in_ruleQualifiedName3636);
             	    this_ValidID_2=ruleValidID();
 
             	    state._fsp--;
@@ -4444,7 +4493,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
             	    break;
 
             	default :
-            	    break loop40;
+            	    break loop41;
                 }
             } while (true);
 
@@ -4469,7 +4518,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleQualifiedNameWithWildcard"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1804:1: entryRuleQualifiedNameWithWildcard returns [String current=null] : iv_ruleQualifiedNameWithWildcard= ruleQualifiedNameWithWildcard EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1826:1: entryRuleQualifiedNameWithWildcard returns [String current=null] : iv_ruleQualifiedNameWithWildcard= ruleQualifiedNameWithWildcard EOF ;
     public final String entryRuleQualifiedNameWithWildcard() throws RecognitionException {
         String current = null;
 
@@ -4477,17 +4526,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1805:2: (iv_ruleQualifiedNameWithWildcard= ruleQualifiedNameWithWildcard EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1806:2: iv_ruleQualifiedNameWithWildcard= ruleQualifiedNameWithWildcard EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1827:2: (iv_ruleQualifiedNameWithWildcard= ruleQualifiedNameWithWildcard EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1828:2: iv_ruleQualifiedNameWithWildcard= ruleQualifiedNameWithWildcard EOF
             {
              newCompositeNode(grammarAccess.getQualifiedNameWithWildcardRule()); 
-            pushFollow(FOLLOW_ruleQualifiedNameWithWildcard_in_entryRuleQualifiedNameWithWildcard3647);
+            pushFollow(FOLLOW_ruleQualifiedNameWithWildcard_in_entryRuleQualifiedNameWithWildcard3684);
             iv_ruleQualifiedNameWithWildcard=ruleQualifiedNameWithWildcard();
 
             state._fsp--;
 
              current =iv_ruleQualifiedNameWithWildcard.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedNameWithWildcard3658); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleQualifiedNameWithWildcard3695); 
 
             }
 
@@ -4505,7 +4554,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleQualifiedNameWithWildcard"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1813:1: ruleQualifiedNameWithWildcard returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1835:1: ruleQualifiedNameWithWildcard returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' ) ;
     public final AntlrDatatypeRuleToken ruleQualifiedNameWithWildcard() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -4516,16 +4565,16 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1816:28: ( (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1817:1: (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1838:28: ( (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1839:1: (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1817:1: (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1818:5: this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*'
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1839:1: (this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*' )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1840:5: this_QualifiedName_0= ruleQualifiedName kw= '.' kw= '*'
             {
              
                     newCompositeNode(grammarAccess.getQualifiedNameWithWildcardAccess().getQualifiedNameParserRuleCall_0()); 
                 
-            pushFollow(FOLLOW_ruleQualifiedName_in_ruleQualifiedNameWithWildcard3705);
+            pushFollow(FOLLOW_ruleQualifiedName_in_ruleQualifiedNameWithWildcard3742);
             this_QualifiedName_0=ruleQualifiedName();
 
             state._fsp--;
@@ -4536,12 +4585,12 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
              
                     afterParserOrEnumRuleCall();
                 
-            kw=(Token)match(input,37,FOLLOW_37_in_ruleQualifiedNameWithWildcard3723); 
+            kw=(Token)match(input,37,FOLLOW_37_in_ruleQualifiedNameWithWildcard3760); 
 
                     current.merge(kw);
                     newLeafNode(kw, grammarAccess.getQualifiedNameWithWildcardAccess().getFullStopKeyword_1()); 
                 
-            kw=(Token)match(input,19,FOLLOW_19_in_ruleQualifiedNameWithWildcard3736); 
+            kw=(Token)match(input,19,FOLLOW_19_in_ruleQualifiedNameWithWildcard3773); 
 
                     current.merge(kw);
                     newLeafNode(kw, grammarAccess.getQualifiedNameWithWildcardAccess().getAsteriskKeyword_2()); 
@@ -4567,7 +4616,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleValidID"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1848:1: entryRuleValidID returns [String current=null] : iv_ruleValidID= ruleValidID EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1870:1: entryRuleValidID returns [String current=null] : iv_ruleValidID= ruleValidID EOF ;
     public final String entryRuleValidID() throws RecognitionException {
         String current = null;
 
@@ -4575,17 +4624,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1849:2: (iv_ruleValidID= ruleValidID EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1850:2: iv_ruleValidID= ruleValidID EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1871:2: (iv_ruleValidID= ruleValidID EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1872:2: iv_ruleValidID= ruleValidID EOF
             {
              newCompositeNode(grammarAccess.getValidIDRule()); 
-            pushFollow(FOLLOW_ruleValidID_in_entryRuleValidID3777);
+            pushFollow(FOLLOW_ruleValidID_in_entryRuleValidID3814);
             iv_ruleValidID=ruleValidID();
 
             state._fsp--;
 
              current =iv_ruleValidID.getText(); 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleValidID3788); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleValidID3825); 
 
             }
 
@@ -4603,7 +4652,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleValidID"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1857:1: ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_ID_0= RULE_ID ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1879:1: ruleValidID returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()] : this_ID_0= RULE_ID ;
     public final AntlrDatatypeRuleToken ruleValidID() throws RecognitionException {
         AntlrDatatypeRuleToken current = new AntlrDatatypeRuleToken();
 
@@ -4612,10 +4661,10 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1860:28: (this_ID_0= RULE_ID )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1861:5: this_ID_0= RULE_ID
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1882:28: (this_ID_0= RULE_ID )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1883:5: this_ID_0= RULE_ID
             {
-            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleValidID3827); 
+            this_ID_0=(Token)match(input,RULE_ID,FOLLOW_RULE_ID_in_ruleValidID3864); 
 
             		current.merge(this_ID_0);
                 
@@ -4640,7 +4689,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "entryRuleDocu"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1876:1: entryRuleDocu returns [EObject current=null] : iv_ruleDocu= ruleDocu EOF ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1898:1: entryRuleDocu returns [EObject current=null] : iv_ruleDocu= ruleDocu EOF ;
     public final EObject entryRuleDocu() throws RecognitionException {
         EObject current = null;
 
@@ -4648,17 +4697,17 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1877:2: (iv_ruleDocu= ruleDocu EOF )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1878:2: iv_ruleDocu= ruleDocu EOF
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1899:2: (iv_ruleDocu= ruleDocu EOF )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1900:2: iv_ruleDocu= ruleDocu EOF
             {
              newCompositeNode(grammarAccess.getDocuRule()); 
-            pushFollow(FOLLOW_ruleDocu_in_entryRuleDocu3871);
+            pushFollow(FOLLOW_ruleDocu_in_entryRuleDocu3908);
             iv_ruleDocu=ruleDocu();
 
             state._fsp--;
 
              current =iv_ruleDocu; 
-            match(input,EOF,FOLLOW_EOF_in_entryRuleDocu3881); 
+            match(input,EOF,FOLLOW_EOF_in_entryRuleDocu3918); 
 
             }
 
@@ -4676,7 +4725,7 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
 
 
     // $ANTLR start "ruleDocu"
-    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1885:1: ruleDocu returns [EObject current=null] : ( (lv_content_0_0= RULE_JDOC ) ) ;
+    // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1907:1: ruleDocu returns [EObject current=null] : ( (lv_content_0_0= RULE_JDOC ) ) ;
     public final EObject ruleDocu() throws RecognitionException {
         EObject current = null;
 
@@ -4685,16 +4734,16 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
          enterRule(); 
             
         try {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1888:28: ( ( (lv_content_0_0= RULE_JDOC ) ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1889:1: ( (lv_content_0_0= RULE_JDOC ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1910:28: ( ( (lv_content_0_0= RULE_JDOC ) ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1911:1: ( (lv_content_0_0= RULE_JDOC ) )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1889:1: ( (lv_content_0_0= RULE_JDOC ) )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1890:1: (lv_content_0_0= RULE_JDOC )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1911:1: ( (lv_content_0_0= RULE_JDOC ) )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1912:1: (lv_content_0_0= RULE_JDOC )
             {
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1890:1: (lv_content_0_0= RULE_JDOC )
-            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1891:3: lv_content_0_0= RULE_JDOC
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1912:1: (lv_content_0_0= RULE_JDOC )
+            // ../at.bestsolution.objc.mapper/src-gen/at/bestsolution/objc/mapper/parser/antlr/internal/InternalMapper.g:1913:3: lv_content_0_0= RULE_JDOC
             {
-            lv_content_0_0=(Token)match(input,RULE_JDOC,FOLLOW_RULE_JDOC_in_ruleDocu3922); 
+            lv_content_0_0=(Token)match(input,RULE_JDOC,FOLLOW_RULE_JDOC_in_ruleDocu3959); 
 
             			newLeafNode(lv_content_0_0, grammarAccess.getDocuAccess().getContentJDOCTerminalRuleCall_0()); 
             		
@@ -4738,24 +4787,24 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
     static final String DFA4_eotS =
         "\6\uffff";
     static final String DFA4_eofS =
-        "\1\uffff\1\3\2\uffff\1\3\1\uffff";
+        "\1\uffff\1\3\3\uffff\1\3";
     static final String DFA4_minS =
-        "\1\4\1\6\1\4\1\uffff\1\6\1\uffff";
+        "\1\4\1\6\1\4\2\uffff\1\6";
     static final String DFA4_maxS =
-        "\1\4\1\51\1\23\1\uffff\1\51\1\uffff";
+        "\1\4\1\51\1\23\2\uffff\1\51";
     static final String DFA4_acceptS =
-        "\3\uffff\1\2\1\uffff\1\1";
+        "\3\uffff\1\2\1\1\1\uffff";
     static final String DFA4_specialS =
         "\6\uffff}>";
     static final String[] DFA4_transitionS = {
             "\1\1",
             "\1\3\10\uffff\1\3\4\uffff\2\3\12\uffff\1\3\4\uffff\1\2\2\uffff"+
             "\2\3",
-            "\1\4\16\uffff\1\5",
+            "\1\5\16\uffff\1\4",
+            "",
             "",
             "\1\3\10\uffff\1\3\4\uffff\2\3\12\uffff\1\3\4\uffff\1\2\2\uffff"+
-            "\2\3",
-            ""
+            "\2\3"
     };
 
     static final short[] DFA4_eot = DFA.unpackEncodedString(DFA4_eotS);
@@ -4907,122 +4956,124 @@ public class InternalMapperParser extends AbstractInternalAntlrParser {
     public static final BitSet FOLLOW_28_in_ruleMessage1258 = new BitSet(new long[]{0x0000000000000010L});
     public static final BitSet FOLLOW_ruleMessageElement_in_ruleMessage1279 = new BitSet(new long[]{0x0000000000400010L});
     public static final BitSet FOLLOW_22_in_ruleMessage1292 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleVersion_in_ruleMessage1313 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleMessage1325 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleMessageElement_in_entryRuleMessageElement1361 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleMessageElement1371 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMessageElement1413 = new BitSet(new long[]{0x0000000040000002L});
-    public static final BitSet FOLLOW_30_in_ruleMessageElement1431 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleMessageElement1443 = new BitSet(new long[]{0x0000380080010010L});
-    public static final BitSet FOLLOW_31_in_ruleMessageElement1456 = new BitSet(new long[]{0x0000380000010010L});
-    public static final BitSet FOLLOW_ruleTypeRef_in_ruleMessageElement1479 = new BitSet(new long[]{0x0000000010000000L});
-    public static final BitSet FOLLOW_28_in_ruleMessageElement1491 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleMessageElement1508 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleClass_in_entryRuleClass1551 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleClass1561 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDocu_in_ruleClass1607 = new BitSet(new long[]{0x0000000100100000L});
-    public static final BitSet FOLLOW_20_in_ruleClass1621 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleVersion_in_ruleClass1642 = new BitSet(new long[]{0x0000000100000000L});
-    public static final BitSet FOLLOW_32_in_ruleClass1656 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleClass1673 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_22_in_ruleClass1690 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleVersion_in_ruleClass1711 = new BitSet(new long[]{0x0000000600800000L});
-    public static final BitSet FOLLOW_33_in_ruleClass1724 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleClass1747 = new BitSet(new long[]{0x0000000400800000L});
-    public static final BitSet FOLLOW_34_in_ruleClass1762 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleClass1785 = new BitSet(new long[]{0x0000000800800000L});
-    public static final BitSet FOLLOW_35_in_ruleClass1798 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleClass1821 = new BitSet(new long[]{0x0000000800800000L});
-    public static final BitSet FOLLOW_23_in_ruleClass1837 = new BitSet(new long[]{0x0000005007100040L});
-    public static final BitSet FOLLOW_36_in_ruleClass1850 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_ruleClass1862 = new BitSet(new long[]{0x0000000006100040L});
-    public static final BitSet FOLLOW_ruleMessage_in_ruleClass1883 = new BitSet(new long[]{0x0000000007100040L});
-    public static final BitSet FOLLOW_24_in_ruleClass1896 = new BitSet(new long[]{0x0000004007100040L});
-    public static final BitSet FOLLOW_ruleProperty_in_ruleClass1919 = new BitSet(new long[]{0x0000004007100040L});
-    public static final BitSet FOLLOW_ruleMessage_in_ruleClass1941 = new BitSet(new long[]{0x0000000007100040L});
-    public static final BitSet FOLLOW_24_in_ruleClass1954 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleVersion_in_entryRuleVersion1990 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleVersion2000 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleVersion2042 = new BitSet(new long[]{0x0000002000000000L});
-    public static final BitSet FOLLOW_37_in_ruleVersion2059 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleVersion2076 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleProperty_in_entryRuleProperty2117 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleProperty2127 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDocu_in_ruleProperty2173 = new BitSet(new long[]{0x0000004000100000L});
-    public static final BitSet FOLLOW_20_in_ruleProperty2187 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleVersion_in_ruleProperty2208 = new BitSet(new long[]{0x0000004000000000L});
-    public static final BitSet FOLLOW_38_in_ruleProperty2222 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleProperty2234 = new BitSet(new long[]{0x0000000010000010L});
-    public static final BitSet FOLLOW_rulePropertyAttribute_in_ruleProperty2256 = new BitSet(new long[]{0x0000000810000000L});
-    public static final BitSet FOLLOW_35_in_ruleProperty2269 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_rulePropertyAttribute_in_ruleProperty2290 = new BitSet(new long[]{0x0000000810000000L});
-    public static final BitSet FOLLOW_28_in_ruleProperty2306 = new BitSet(new long[]{0x0000380000010010L});
-    public static final BitSet FOLLOW_ruleTypeRef_in_ruleProperty2327 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleProperty2344 = new BitSet(new long[]{0x0000000000400000L});
-    public static final BitSet FOLLOW_22_in_ruleProperty2361 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_ruleVersion_in_ruleProperty2382 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleProperty2394 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_rulePropertyAttribute_in_entryRulePropertyAttribute2430 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRulePropertyAttribute2440 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulePropertyAttribute2482 = new BitSet(new long[]{0x0000008000000002L});
-    public static final BitSet FOLLOW_39_in_rulePropertyAttribute2500 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_rulePropertyAttribute2517 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEnum_in_entryRuleEnum2560 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEnum2570 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_40_in_ruleEnum2607 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleEnum2624 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_ruleEnum2641 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleEnumElement_in_ruleEnum2662 = new BitSet(new long[]{0x0000000801000000L});
-    public static final BitSet FOLLOW_35_in_ruleEnum2675 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleEnumElement_in_ruleEnum2696 = new BitSet(new long[]{0x0000000801000000L});
-    public static final BitSet FOLLOW_24_in_ruleEnum2710 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleEnumElement_in_entryRuleEnumElement2746 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleEnumElement2756 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleEnumElement2798 = new BitSet(new long[]{0x0000008000000002L});
-    public static final BitSet FOLLOW_39_in_ruleEnumElement2816 = new BitSet(new long[]{0x0000000000000020L});
-    public static final BitSet FOLLOW_RULE_INT_in_ruleEnumElement2833 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTypeDef_in_entryRuleTypeDef2876 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleTypeDef2886 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDocu_in_ruleTypeDef2932 = new BitSet(new long[]{0x0000020000000000L});
-    public static final BitSet FOLLOW_41_in_ruleTypeDef2945 = new BitSet(new long[]{0x00003C0000010010L});
-    public static final BitSet FOLLOW_42_in_ruleTypeDef2965 = new BitSet(new long[]{0x0000000000800000L});
-    public static final BitSet FOLLOW_23_in_ruleTypeDef2990 = new BitSet(new long[]{0x0000380000010010L});
-    public static final BitSet FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3012 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleTypeDef3024 = new BitSet(new long[]{0x0000380001010010L});
-    public static final BitSet FOLLOW_24_in_ruleTypeDef3038 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_43_in_ruleTypeDef3064 = new BitSet(new long[]{0x0000000008000000L});
-    public static final BitSet FOLLOW_27_in_ruleTypeDef3089 = new BitSet(new long[]{0x0000380000010010L});
-    public static final BitSet FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3110 = new BitSet(new long[]{0x0000000810000000L});
-    public static final BitSet FOLLOW_35_in_ruleTypeDef3123 = new BitSet(new long[]{0x0000380000010010L});
-    public static final BitSet FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3144 = new BitSet(new long[]{0x0000000810000000L});
-    public static final BitSet FOLLOW_28_in_ruleTypeDef3158 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleTypeRef_in_ruleTypeDef3186 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleTypeDef3204 = new BitSet(new long[]{0x0000000020000000L});
-    public static final BitSet FOLLOW_29_in_ruleTypeDef3221 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTypeStructAttribute_in_entryRuleTypeStructAttribute3257 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleTypeStructAttribute3267 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleTypeRef_in_ruleTypeStructAttribute3313 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleTypeStructAttribute3330 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleBuiltinType_in_entryRuleBuiltinType3372 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleBuiltinType3383 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_43_in_ruleBuiltinType3421 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_44_in_ruleBuiltinType3440 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_45_in_ruleBuiltinType3459 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName3500 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedName3511 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleQualifiedName3558 = new BitSet(new long[]{0x0000002000000002L});
-    public static final BitSet FOLLOW_37_in_ruleQualifiedName3577 = new BitSet(new long[]{0x0000000000000010L});
-    public static final BitSet FOLLOW_ruleValidID_in_ruleQualifiedName3599 = new BitSet(new long[]{0x0000002000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedNameWithWildcard_in_entryRuleQualifiedNameWithWildcard3647 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedNameWithWildcard3658 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleQualifiedNameWithWildcard3705 = new BitSet(new long[]{0x0000002000000000L});
-    public static final BitSet FOLLOW_37_in_ruleQualifiedNameWithWildcard3723 = new BitSet(new long[]{0x0000000000080000L});
-    public static final BitSet FOLLOW_19_in_ruleQualifiedNameWithWildcard3736 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleValidID_in_entryRuleValidID3777 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleValidID3788 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_ID_in_ruleValidID3827 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_ruleDocu_in_entryRuleDocu3871 = new BitSet(new long[]{0x0000000000000000L});
-    public static final BitSet FOLLOW_EOF_in_entryRuleDocu3881 = new BitSet(new long[]{0x0000000000000002L});
-    public static final BitSet FOLLOW_RULE_JDOC_in_ruleDocu3922 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleVersion_in_ruleMessage1313 = new BitSet(new long[]{0x0000000020004000L});
+    public static final BitSet FOLLOW_14_in_ruleMessage1326 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMessage1343 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleMessage1362 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleMessageElement_in_entryRuleMessageElement1398 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleMessageElement1408 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMessageElement1450 = new BitSet(new long[]{0x0000000040000002L});
+    public static final BitSet FOLLOW_30_in_ruleMessageElement1468 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_ruleMessageElement1480 = new BitSet(new long[]{0x0000380080010010L});
+    public static final BitSet FOLLOW_31_in_ruleMessageElement1493 = new BitSet(new long[]{0x0000380000010010L});
+    public static final BitSet FOLLOW_ruleTypeRef_in_ruleMessageElement1516 = new BitSet(new long[]{0x0000000010000000L});
+    public static final BitSet FOLLOW_28_in_ruleMessageElement1528 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleMessageElement1545 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleClass_in_entryRuleClass1588 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleClass1598 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDocu_in_ruleClass1644 = new BitSet(new long[]{0x0000000100100000L});
+    public static final BitSet FOLLOW_20_in_ruleClass1658 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleVersion_in_ruleClass1679 = new BitSet(new long[]{0x0000000100000000L});
+    public static final BitSet FOLLOW_32_in_ruleClass1693 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleClass1710 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleClass1727 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleVersion_in_ruleClass1748 = new BitSet(new long[]{0x0000000600800000L});
+    public static final BitSet FOLLOW_33_in_ruleClass1761 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleClass1784 = new BitSet(new long[]{0x0000000400800000L});
+    public static final BitSet FOLLOW_34_in_ruleClass1799 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleClass1822 = new BitSet(new long[]{0x0000000800800000L});
+    public static final BitSet FOLLOW_35_in_ruleClass1835 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleClass1858 = new BitSet(new long[]{0x0000000800800000L});
+    public static final BitSet FOLLOW_23_in_ruleClass1874 = new BitSet(new long[]{0x0000005007100040L});
+    public static final BitSet FOLLOW_36_in_ruleClass1887 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleClass1899 = new BitSet(new long[]{0x0000000006100040L});
+    public static final BitSet FOLLOW_ruleMessage_in_ruleClass1920 = new BitSet(new long[]{0x0000000007100040L});
+    public static final BitSet FOLLOW_24_in_ruleClass1933 = new BitSet(new long[]{0x0000004007100040L});
+    public static final BitSet FOLLOW_ruleProperty_in_ruleClass1956 = new BitSet(new long[]{0x0000004007100040L});
+    public static final BitSet FOLLOW_ruleMessage_in_ruleClass1978 = new BitSet(new long[]{0x0000000007100040L});
+    public static final BitSet FOLLOW_24_in_ruleClass1991 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleVersion_in_entryRuleVersion2027 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleVersion2037 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleVersion2079 = new BitSet(new long[]{0x0000002000000000L});
+    public static final BitSet FOLLOW_37_in_ruleVersion2096 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleVersion2113 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleProperty_in_entryRuleProperty2154 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleProperty2164 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDocu_in_ruleProperty2210 = new BitSet(new long[]{0x0000004000100000L});
+    public static final BitSet FOLLOW_20_in_ruleProperty2224 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleVersion_in_ruleProperty2245 = new BitSet(new long[]{0x0000004000000000L});
+    public static final BitSet FOLLOW_38_in_ruleProperty2259 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_ruleProperty2271 = new BitSet(new long[]{0x0000000010000010L});
+    public static final BitSet FOLLOW_rulePropertyAttribute_in_ruleProperty2293 = new BitSet(new long[]{0x0000000810000000L});
+    public static final BitSet FOLLOW_35_in_ruleProperty2306 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_rulePropertyAttribute_in_ruleProperty2327 = new BitSet(new long[]{0x0000000810000000L});
+    public static final BitSet FOLLOW_28_in_ruleProperty2343 = new BitSet(new long[]{0x0000380000010010L});
+    public static final BitSet FOLLOW_ruleTypeRef_in_ruleProperty2364 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleProperty2381 = new BitSet(new long[]{0x0000000000400000L});
+    public static final BitSet FOLLOW_22_in_ruleProperty2398 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_ruleVersion_in_ruleProperty2419 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleProperty2431 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_rulePropertyAttribute_in_entryRulePropertyAttribute2467 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRulePropertyAttribute2477 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulePropertyAttribute2519 = new BitSet(new long[]{0x0000008000000002L});
+    public static final BitSet FOLLOW_39_in_rulePropertyAttribute2537 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_rulePropertyAttribute2554 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEnum_in_entryRuleEnum2597 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEnum2607 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_40_in_ruleEnum2644 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleEnum2661 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleEnum2678 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleEnumElement_in_ruleEnum2699 = new BitSet(new long[]{0x0000000801000000L});
+    public static final BitSet FOLLOW_35_in_ruleEnum2712 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleEnumElement_in_ruleEnum2733 = new BitSet(new long[]{0x0000000801000000L});
+    public static final BitSet FOLLOW_24_in_ruleEnum2747 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleEnumElement_in_entryRuleEnumElement2783 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleEnumElement2793 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleEnumElement2835 = new BitSet(new long[]{0x0000008000000002L});
+    public static final BitSet FOLLOW_39_in_ruleEnumElement2853 = new BitSet(new long[]{0x0000000000000020L});
+    public static final BitSet FOLLOW_RULE_INT_in_ruleEnumElement2870 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleTypeDef_in_entryRuleTypeDef2913 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleTypeDef2923 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDocu_in_ruleTypeDef2969 = new BitSet(new long[]{0x0000020000000000L});
+    public static final BitSet FOLLOW_41_in_ruleTypeDef2982 = new BitSet(new long[]{0x00003C0000010010L});
+    public static final BitSet FOLLOW_42_in_ruleTypeDef3002 = new BitSet(new long[]{0x0000000000800000L});
+    public static final BitSet FOLLOW_23_in_ruleTypeDef3027 = new BitSet(new long[]{0x0000380000010010L});
+    public static final BitSet FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3049 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleTypeDef3061 = new BitSet(new long[]{0x0000380001010010L});
+    public static final BitSet FOLLOW_24_in_ruleTypeDef3075 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_43_in_ruleTypeDef3101 = new BitSet(new long[]{0x0000000008000000L});
+    public static final BitSet FOLLOW_27_in_ruleTypeDef3126 = new BitSet(new long[]{0x0000380000010010L});
+    public static final BitSet FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3147 = new BitSet(new long[]{0x0000000810000000L});
+    public static final BitSet FOLLOW_35_in_ruleTypeDef3160 = new BitSet(new long[]{0x0000380000010010L});
+    public static final BitSet FOLLOW_ruleTypeStructAttribute_in_ruleTypeDef3181 = new BitSet(new long[]{0x0000000810000000L});
+    public static final BitSet FOLLOW_28_in_ruleTypeDef3195 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleTypeRef_in_ruleTypeDef3223 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleTypeDef3241 = new BitSet(new long[]{0x0000000020000000L});
+    public static final BitSet FOLLOW_29_in_ruleTypeDef3258 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleTypeStructAttribute_in_entryRuleTypeStructAttribute3294 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleTypeStructAttribute3304 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleTypeRef_in_ruleTypeStructAttribute3350 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleTypeStructAttribute3367 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleBuiltinType_in_entryRuleBuiltinType3409 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleBuiltinType3420 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_43_in_ruleBuiltinType3458 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_44_in_ruleBuiltinType3477 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_45_in_ruleBuiltinType3496 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_entryRuleQualifiedName3537 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedName3548 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleQualifiedName3595 = new BitSet(new long[]{0x0000002000000002L});
+    public static final BitSet FOLLOW_37_in_ruleQualifiedName3614 = new BitSet(new long[]{0x0000000000000010L});
+    public static final BitSet FOLLOW_ruleValidID_in_ruleQualifiedName3636 = new BitSet(new long[]{0x0000002000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedNameWithWildcard_in_entryRuleQualifiedNameWithWildcard3684 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleQualifiedNameWithWildcard3695 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleQualifiedName_in_ruleQualifiedNameWithWildcard3742 = new BitSet(new long[]{0x0000002000000000L});
+    public static final BitSet FOLLOW_37_in_ruleQualifiedNameWithWildcard3760 = new BitSet(new long[]{0x0000000000080000L});
+    public static final BitSet FOLLOW_19_in_ruleQualifiedNameWithWildcard3773 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleValidID_in_entryRuleValidID3814 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleValidID3825 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_ID_in_ruleValidID3864 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_ruleDocu_in_entryRuleDocu3908 = new BitSet(new long[]{0x0000000000000000L});
+    public static final BitSet FOLLOW_EOF_in_entryRuleDocu3918 = new BitSet(new long[]{0x0000000000000002L});
+    public static final BitSet FOLLOW_RULE_JDOC_in_ruleDocu3959 = new BitSet(new long[]{0x0000000000000002L});
 
 }

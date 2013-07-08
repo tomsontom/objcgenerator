@@ -37,6 +37,7 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Message/returnValue"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Message/elements"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference Mapper.ecore#//Message/since"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//Message/javaName"/>
     </genClasses>
     <genClasses ecoreClass="Mapper.ecore#//MessageElement">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute Mapper.ecore#//MessageElement/name"/>

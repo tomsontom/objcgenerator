@@ -37,6 +37,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
  *   <li>{@link at.bestsolution.objc.mapper.mapper.impl.MessageImpl#getReturnValue <em>Return Value</em>}</li>
  *   <li>{@link at.bestsolution.objc.mapper.mapper.impl.MessageImpl#getElements <em>Elements</em>}</li>
  *   <li>{@link at.bestsolution.objc.mapper.mapper.impl.MessageImpl#getSince <em>Since</em>}</li>
+ *   <li>{@link at.bestsolution.objc.mapper.mapper.impl.MessageImpl#getJavaName <em>Java Name</em>}</li>
  * </ul>
  * </p>
  *
@@ -93,6 +94,26 @@ public class MessageImpl extends MinimalEObjectImpl.Container implements Message
    * @ordered
    */
   protected Version since;
+
+  /**
+   * The default value of the '{@link #getJavaName() <em>Java Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getJavaName()
+   * @generated
+   * @ordered
+   */
+  protected static final String JAVA_NAME_EDEFAULT = null;
+
+  /**
+   * The cached value of the '{@link #getJavaName() <em>Java Name</em>}' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @see #getJavaName()
+   * @generated
+   * @ordered
+   */
+  protected String javaName = JAVA_NAME_EDEFAULT;
 
   /**
    * <!-- begin-user-doc -->
@@ -326,6 +347,29 @@ public class MessageImpl extends MinimalEObjectImpl.Container implements Message
    * <!-- end-user-doc -->
    * @generated
    */
+  public String getJavaName()
+  {
+    return javaName;
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  public void setJavaName(String newJavaName)
+  {
+    String oldJavaName = javaName;
+    javaName = newJavaName;
+    if (eNotificationRequired())
+      eNotify(new ENotificationImpl(this, Notification.SET, MapperPackage.MESSAGE__JAVA_NAME, oldJavaName, javaName));
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
@@ -365,6 +409,8 @@ public class MessageImpl extends MinimalEObjectImpl.Container implements Message
         return getElements();
       case MapperPackage.MESSAGE__SINCE:
         return getSince();
+      case MapperPackage.MESSAGE__JAVA_NAME:
+        return getJavaName();
     }
     return super.eGet(featureID, resolve, coreType);
   }
@@ -396,6 +442,9 @@ public class MessageImpl extends MinimalEObjectImpl.Container implements Message
       case MapperPackage.MESSAGE__SINCE:
         setSince((Version)newValue);
         return;
+      case MapperPackage.MESSAGE__JAVA_NAME:
+        setJavaName((String)newValue);
+        return;
     }
     super.eSet(featureID, newValue);
   }
@@ -425,6 +474,9 @@ public class MessageImpl extends MinimalEObjectImpl.Container implements Message
       case MapperPackage.MESSAGE__SINCE:
         setSince((Version)null);
         return;
+      case MapperPackage.MESSAGE__JAVA_NAME:
+        setJavaName(JAVA_NAME_EDEFAULT);
+        return;
     }
     super.eUnset(featureID);
   }
@@ -449,8 +501,27 @@ public class MessageImpl extends MinimalEObjectImpl.Container implements Message
         return elements != null && !elements.isEmpty();
       case MapperPackage.MESSAGE__SINCE:
         return since != null;
+      case MapperPackage.MESSAGE__JAVA_NAME:
+        return JAVA_NAME_EDEFAULT == null ? javaName != null : !JAVA_NAME_EDEFAULT.equals(javaName);
     }
     return super.eIsSet(featureID);
+  }
+
+  /**
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   */
+  @Override
+  public String toString()
+  {
+    if (eIsProxy()) return super.toString();
+
+    StringBuffer result = new StringBuffer(super.toString());
+    result.append(" (javaName: ");
+    result.append(javaName);
+    result.append(')');
+    return result.toString();
   }
 
 } //MessageImpl

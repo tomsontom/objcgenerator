@@ -39,11 +39,11 @@ protocol CLLocationManagerDelegate since 2.0 {
 	 /**
 	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManagerDidPauseLocationUpdates:
 	  */
-	 - (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager since 6.0;
+	 - (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager since 6.0 mapped-to didPauseLocationUpdates;
 	 /**
 	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManagerDidResumeLocationUpdates:
 	  */ 
-	 - (void)locationManagerDidResumeLocationUpdates:(CLLocationManager *)manager since 6.0;
+	 - (void)locationManagerDidResumeLocationUpdates:(CLLocationManager *)manager since 6.0 mapped-to didResumeLocationUpdates;
 	 /**
 	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didUpdateHeading:
 	  */
@@ -51,7 +51,7 @@ protocol CLLocationManagerDelegate since 2.0 {
 	 /**
 	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManagerShouldDisplayHeadingCalibration:
 	  */
-	 - (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager since 3.0;
+	 - (BOOL)locationManagerShouldDisplayHeadingCalibration:(CLLocationManager *)manager since 3.0 mapped-to shouldDisplayHeadingCalibration;
 	 /**
 	  * @see http://developer.apple.com/library/ios/documentation/CoreLocation/Reference/CLLocationManagerDelegate_Protocol/CLLocationManagerDelegate/CLLocationManagerDelegate.html#//apple_ref/occ/intfm/CLLocationManagerDelegate/locationManager:didEnterRegion:
 	  */

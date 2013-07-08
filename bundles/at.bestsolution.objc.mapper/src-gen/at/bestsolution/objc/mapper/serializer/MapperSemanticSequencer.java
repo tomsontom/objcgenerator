@@ -208,7 +208,14 @@ public class MapperSemanticSequencer extends AbstractDelegatingSemanticSequencer
 	
 	/**
 	 * Constraint:
-	 *     (doc=Docu? deprecated=Version? returnValue=TypeRef elements+=MessageElement+ since=Version)
+	 *     (
+	 *         doc=Docu? 
+	 *         deprecated=Version? 
+	 *         returnValue=TypeRef 
+	 *         elements+=MessageElement+ 
+	 *         since=Version 
+	 *         javaName=ID?
+	 *     )
 	 */
 	protected void sequence_Message(EObject context, Message semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);

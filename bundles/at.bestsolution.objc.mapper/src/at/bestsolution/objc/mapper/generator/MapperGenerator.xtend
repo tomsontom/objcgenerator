@@ -107,18 +107,18 @@ class MapperGenerator implements IGenerator {
 	public interface «protocol.name» extends «"org.robovm.cocoatouch.foundation.NSObjectProtocol".shorten("NSObjectProtocol")» {
 		
 		«FOR m : protocol.messages»
-		public «m.returnValue.toType(mgr)» «m.messageName»(«m.elements.map[e|e.type.toType(mgr) + " " + e.name].join(",")»);
+		public «m.returnValue.toType(mgr)» «m.protocolMessageName»(«m.elements.map[e|e.type.toType(mgr) + " " + e.name].join(",")»);
 		«ENDFOR»
 	
 		public static class Adapter extends «"org.robovm.cocoatouch.foundation.NSObject".shorten("NSObject")» implements «protocol.name» {
 			«FOR m : protocol.messages»
-			@«"org.robovm.objc.annotation.NotImplemented".shorten("NotImplemented")»("«m.elements.map[e|e.name].join(":")»:") public «m.returnValue.toType(mgr)» «m.messageName»(«m.elements.map[e|e.type.toType(mgr) + " " + e.name].join(",")») { throw new UnsupportedOperationException(); }
+			@«"org.robovm.objc.annotation.NotImplemented".shorten("NotImplemented")»("«m.elements.map[e|e.name].join(":")»:") public «m.returnValue.toType(mgr)» «m.protocolMessageName»(«m.elements.map[e|e.type.toType(mgr) + " " + e.name].join(",")») { throw new UnsupportedOperationException(); }
 			«ENDFOR»
 		}
 		
 		static class Callbacks {
 			«FOR m : protocol.messages»
-			@«"org.robovm.rt.bro.annotation.Callback".shorten("Callback")» @«"org.robovm.objc.annotation.BindSelector".shorten("BindSelector")»("«m.elements.map[e|e.name].join(":")»:") public static «m.returnValue.toType(mgr)» «m.messageName»(«protocol.name» __self__, «"org.robovm.objc.Selector".shorten("Selector")» __cmd__, «m.elements.map[e|e.type.toType(mgr) + " " + e.name].join(",")») { «IF m.returnValue.toType(mgr) != "void"»return «ENDIF»__self__.«m.messageName»( «m.elements.map[e|e.name].join(",")»); }
+			@«"org.robovm.rt.bro.annotation.Callback".shorten("Callback")» @«"org.robovm.objc.annotation.BindSelector".shorten("BindSelector")»("«m.elements.map[e|e.name].join(":")»:") public static «m.returnValue.toType(mgr)» «m.protocolMessageName»(«protocol.name» __self__, «"org.robovm.objc.Selector".shorten("Selector")» __cmd__, «m.elements.map[e|e.type.toType(mgr) + " " + e.name].join(",")») { «IF m.returnValue.toType(mgr) != "void"»return «ENDIF»__self__.«m.protocolMessageName»( «m.elements.map[e|e.name].join(",")»); }
 			«ENDFOR»
 		}
 	}
@@ -164,10 +164,10 @@ class MapperGenerator implements IGenerator {
 		return p.attributes.findFirst[a|a.name=="readonly"] != null;
 	}
 	
-	def static toType(TypeRef typeRef, extension ImportManager mgr) {
+	def static String toType(TypeRef typeRef, extension ImportManager mgr) {
 		if( typeRef.builtin != null ) {
 			switch(typeRef.builtin) {
-				case "BOOL": return boolean
+				case "BOOL": return "boolean"
 				default: return typeRef.builtin
 			}
 		} else {
@@ -186,12 +186,15 @@ class MapperGenerator implements IGenerator {
 		return e.eResource.contents.get(0) as PackageDeclaration
 	} 
 	
-	def static messageName(Message m) {
-		if(m.elements.length == 1) {
-			return m.elements.head.name; 
-		} else {
-			return m.elements.get(1).name;
-		}
+	def static protocolMessageName(Message m) {
+		if( m.javaName == null ) {
+			if(m.elements.length == 1) {
+				return m.elements.head.name; 
+			} else {
+				return m.elements.get(1).name;
+			}	
+		} 
+		return m.javaName;
 	}
 	
 	def static fixJDoc(String doc) {

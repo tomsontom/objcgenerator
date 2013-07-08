@@ -53,6 +53,7 @@ public class MapperParser extends AbstractContentAssistParser {
 					put(grammarAccess.getProtocolAccess().getGroup_1(), "rule__Protocol__Group_1__0");
 					put(grammarAccess.getMessageAccess().getGroup(), "rule__Message__Group__0");
 					put(grammarAccess.getMessageAccess().getGroup_1(), "rule__Message__Group_1__0");
+					put(grammarAccess.getMessageAccess().getGroup_9(), "rule__Message__Group_9__0");
 					put(grammarAccess.getMessageElementAccess().getGroup(), "rule__MessageElement__Group__0");
 					put(grammarAccess.getMessageElementAccess().getGroup_1(), "rule__MessageElement__Group_1__0");
 					put(grammarAccess.getClassAccess().getGroup(), "rule__Class__Group__0");
@@ -101,6 +102,7 @@ public class MapperParser extends AbstractContentAssistParser {
 					put(grammarAccess.getMessageAccess().getReturnValueAssignment_4(), "rule__Message__ReturnValueAssignment_4");
 					put(grammarAccess.getMessageAccess().getElementsAssignment_6(), "rule__Message__ElementsAssignment_6");
 					put(grammarAccess.getMessageAccess().getSinceAssignment_8(), "rule__Message__SinceAssignment_8");
+					put(grammarAccess.getMessageAccess().getJavaNameAssignment_9_1(), "rule__Message__JavaNameAssignment_9_1");
 					put(grammarAccess.getMessageElementAccess().getNameAssignment_0(), "rule__MessageElement__NameAssignment_0");
 					put(grammarAccess.getMessageElementAccess().getTypeAssignment_1_3(), "rule__MessageElement__TypeAssignment_1_3");
 					put(grammarAccess.getMessageElementAccess().getVariableAssignment_1_5(), "rule__MessageElement__VariableAssignment_1_5");

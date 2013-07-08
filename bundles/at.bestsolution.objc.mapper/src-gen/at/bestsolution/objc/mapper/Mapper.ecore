@@ -42,6 +42,7 @@
         eType="#//MessageElement" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="since" eType="#//Version"
         containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="javaName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="MessageElement">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

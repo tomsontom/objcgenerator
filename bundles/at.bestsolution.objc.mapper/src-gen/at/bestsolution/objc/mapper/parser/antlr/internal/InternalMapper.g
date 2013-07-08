@@ -673,9 +673,31 @@ ruleMessage returns [EObject current=null]
 	    }
 
 )
-)	otherlv_11=';' 
+)(	otherlv_11='mapped-to' 
     {
-    	newLeafNode(otherlv_11, grammarAccess.getMessageAccess().getSemicolonKeyword_9());
+    	newLeafNode(otherlv_11, grammarAccess.getMessageAccess().getMappedToKeyword_9_0());
+    }
+(
+(
+		lv_javaName_12_0=RULE_ID
+		{
+			newLeafNode(lv_javaName_12_0, grammarAccess.getMessageAccess().getJavaNameIDTerminalRuleCall_9_1_0()); 
+		}
+		{
+	        if ($current==null) {
+	            $current = createModelElement(grammarAccess.getMessageRule());
+	        }
+       		setWithLastConsumed(
+       			$current, 
+       			"javaName",
+        		lv_javaName_12_0, 
+        		"ID");
+	    }
+
+)
+))?	otherlv_13=';' 
+    {
+    	newLeafNode(otherlv_13, grammarAccess.getMessageAccess().getSemicolonKeyword_10());
     }
 )
 ;

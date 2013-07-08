@@ -342,13 +342,22 @@ public interface MapperPackage extends EPackage
   int MESSAGE__SINCE = 4;
 
   /**
+   * The feature id for the '<em><b>Java Name</b></em>' attribute.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @generated
+   * @ordered
+   */
+  int MESSAGE__JAVA_NAME = 5;
+
+  /**
    * The number of structural features of the '<em>Message</em>' class.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
    * @generated
    * @ordered
    */
-  int MESSAGE_FEATURE_COUNT = 5;
+  int MESSAGE_FEATURE_COUNT = 6;
 
   /**
    * The meta object id for the '{@link at.bestsolution.objc.mapper.mapper.impl.MessageElementImpl <em>Message Element</em>}' class.
@@ -1126,6 +1135,17 @@ public interface MapperPackage extends EPackage
   EReference getMessage_Since();
 
   /**
+   * Returns the meta object for the attribute '{@link at.bestsolution.objc.mapper.mapper.Message#getJavaName <em>Java Name</em>}'.
+   * <!-- begin-user-doc -->
+   * <!-- end-user-doc -->
+   * @return the meta object for the attribute '<em>Java Name</em>'.
+   * @see at.bestsolution.objc.mapper.mapper.Message#getJavaName()
+   * @see #getMessage()
+   * @generated
+   */
+  EAttribute getMessage_JavaName();
+
+  /**
    * Returns the meta object for class '{@link at.bestsolution.objc.mapper.mapper.MessageElement <em>Message Element</em>}'.
    * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
@@ -1811,6 +1831,14 @@ public interface MapperPackage extends EPackage
      * @generated
      */
     EReference MESSAGE__SINCE = eINSTANCE.getMessage_Since();
+
+    /**
+     * The meta object literal for the '<em><b>Java Name</b></em>' attribute feature.
+     * <!-- begin-user-doc -->
+     * <!-- end-user-doc -->
+     * @generated
+     */
+    EAttribute MESSAGE__JAVA_NAME = eINSTANCE.getMessage_JavaName();
 
     /**
      * The meta object literal for the '{@link at.bestsolution.objc.mapper.mapper.impl.MessageElementImpl <em>Message Element</em>}' class.
